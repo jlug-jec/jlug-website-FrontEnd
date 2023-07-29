@@ -23,13 +23,13 @@ const App = () => {
           <Business/>
           <Billing/>
           <CardDeal/>
-          <Testimonials/>
           <CTA/>
           <Clients/>
           <Footer/>
 
-          {/* For Trial */}
+          {/* ---- Done ---- */}
           {/* <PresentTeamCarousel/> */}
+          {/* <Testimonials/> */}
           
         </div>
       </div>
