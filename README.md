@@ -1,4 +1,4 @@
-# React + Vite
+# Official Website Of JLUG Club Of Jabalpur Engineering College
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
