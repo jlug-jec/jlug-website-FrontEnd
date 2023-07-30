@@ -1,4 +1,6 @@
-import React from 'react'
+import styles from "../style";
+import { JLUGLogo } from "../assets/logos";
+import { footerLink, socialMedia } from "../constants";
 
 const Footer = () => {
   return (
