@@ -38,10 +38,10 @@ const PreviousEventCarousel = () => {
           <PreviousEventCard eventName = "Alma Matters" profile = {AlmaMatters} eventInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"/>
         </div>
         <div>
-          <PreviousEventCard eventName = "Alma Matters" profile = {AlmaMatters} eventInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"/>
+          <PreviousEventCard eventName = "Engineering Day" profile = {EngineeringDay} eventInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"/>
         </div>
         <div>
-          <PreviousEventCard eventName = "Alma Matters" profile = {AlmaMatters} eventInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"/>
+          <PreviousEventCard eventName = "LinkedIn Session" profile = {LinkedInSession} eventInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"/>
         </div>
         <div>
           <PreviousEventCard eventName = "Alma Matters" profile = {AlmaMatters} eventInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"/>
