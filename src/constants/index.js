@@ -1,5 +1,7 @@
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
 
+import {SamvegSir , MustkeemSir , SaketSir} from '../assets/members_Landing';
+
 export const navLinks = [
   {
     id: "home",
@@ -47,26 +49,26 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
+      "The only thing that feels better than winning is winning when nobody thought you could.",
+    name: "Mr. Samveg Sir",
     title: "Founder & Leader",
-    img: people01,
+    img: SamvegSir,
   },
   {
     id: "feedback-2",
     content:
       "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
+    name: "Mr. Mustkeem Sir",
     title: "Founder & Leader",
-    img: people02,
+    img: MustkeemSir,
   },
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
+      "If you want something you've never had, you must be willing to do something you've never done.",
+    name: "Mr. Saket Sir",
     title: "Founder & Leader",
-    img: people03,
+    img: SaketSir,
   },
 ];
 
@@ -94,7 +96,7 @@ export const footerLinks = [
     links: [
       {
         name: "Content",
-        link: "https://www.hoobank.com/content/",
+        link: "https://www.google.com",
       },
       {
         name: "How it Works",
