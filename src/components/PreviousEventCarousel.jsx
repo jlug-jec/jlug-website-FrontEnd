@@ -2,7 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import PreviousEventCard from "./PreviousEventCard";
 
-import {AlmaMatters , EngineeringDay , LinkedInSession , JecX , HenryHarwin} from '../assets/previous_events'
+import {AlmaMatters2 , JecX , HenryHarwin , AlumniMeets , WingCommander , RohitNema , PanelDiscussion , HarshLalwani , SushilKumar , AWS , Mashaal} from '../assets/previous_events'
 
 import React from "react";
 import Heading from "./Heading";
@@ -41,16 +41,32 @@ const PreviousEventCarousel = () => {
           <PreviousEventCard eventName = "Henry Harvin" profile = {HenryHarwin} eventInfo = "A Live Zoom Data science workshop. With specialization in Python programming, data exploration, statistical analysis & machine learning techniques. Organized on 29th July 2023."/>
         </div>
         <div>
-          <PreviousEventCard eventName = "Alma Matters" profile = {AlmaMatters} eventInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"/>
+          <PreviousEventCard eventName = "Alumni Meet" profile = {AlumniMeets} eventInfo = "Organized on 14th July 2023. The program witnessed the words of wisdom from our distinguished alumni of our esteemed 1971 batch, Cofounder HCL and Padma Bhushan recipient, Mr. Ajai Chowdhry and the esteemed veteran actor, Mr. Sharat Saxena."/>
         </div>
         <div>
-          <PreviousEventCard eventName = "Engineering Day" profile = {EngineeringDay} eventInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"/>
+          <PreviousEventCard eventName = "Alma Matters" profile = {AlmaMatters2} eventInfo = "The event witnessed the presence of many of our esteemed alumni, sharing their life experiences, their stories of success, and various other aspects of their college life."/>
+        </div>
+        
+        <div>
+          <PreviousEventCard eventName = "Session On Career" profile = {WingCommander} eventInfo = "A Live youtube session on  Career opportunities in Defence Services was organized on 1st october 2021. The session was honored with the presence of Wing Commander Reginald Rodgers Singh Retd Wing Commander in the Indian Air Force and an admirable alumni of Jabalpur Engineering College."/>
         </div>
         <div>
-          <PreviousEventCard eventName = "LinkedIn Session" profile = {LinkedInSession} eventInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"/>
+          <PreviousEventCard eventName = "Mr. Rohit Nema" profile = {RohitNema} eventInfo = "Organized on 8th October 2021.The meet witnessed a session on Decipher the art of cracking competitive exams with Mr Rohit Nema, JEC batch of 2010, Civil Servant."/>
         </div>
         <div>
-          <PreviousEventCard eventName = "Alma Matters" profile = {AlmaMatters} eventInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"/>
+          <PreviousEventCard eventName = "Panel Discussion" profile = {PanelDiscussion} eventInfo = "An online zoom session was held on 25th September 2021, where our esteemed alumni held a 'Panel Discussion on Careers & Employment, an Alternative Vision & Perspective for  Engineers.'"/>
+        </div>
+        <div>
+          <PreviousEventCard eventName = "Mr. Harsh Lalwani" profile = {HarshLalwani} eventInfo = "A podcast held on 8th August 2021 featuring Mr. Harsh Lalwani, of alumni batch 2012-2016, on “How to pursue MS abroad”. The podcast aimed at guiding students for future studies and the various options available for higher studies."/>
+        </div>
+        <div>
+          <PreviousEventCard eventName = "Mr. Sushil Sharma" profile = {SushilKumar} eventInfo = "A session on “Ecosystem Restoration” was held on 19th July 2021 with the keynote speaker as one of our alumni Mr. Sushil Kumar Sharma."/>
+        </div>
+        <div>
+          <PreviousEventCard eventName = "AWS Workshop" profile = {AWS} eventInfo = "JLUG along with JECCA, in association with AWS Academy and Industry Partner, brought together a 2 month free online training on the World’s No. 1 Cloud Technology Platform “Amazon Web Services (AWS)”."/>
+        </div>
+        <div>
+          <PreviousEventCard eventName = "Mashaal" profile = {Mashaal} eventInfo = "It was a 2-Day virtual mega event held on 10th-11th July 2021. The event had about 200+ delegates involved with speaker Mr. Mohammad Adil Siddiqui."/>
         </div>
       </Carousel>
       </>

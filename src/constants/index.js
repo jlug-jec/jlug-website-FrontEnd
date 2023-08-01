@@ -12,12 +12,12 @@ export const navLinks = [
     title: "Features",
   },
   {
-    id: "product",
-    title: "Product",
+    id: "jecaa",
+    title: "JECAA",
   },
   {
-    id: "clients",
-    title: "Clients",
+    id: "testimonials",
+    title: "Testimonials",
   },
 ];
 
@@ -25,23 +25,23 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "The Technical Society",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "100% Secured",
+    title: "Workshops And More...",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "Connection With Alumni",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
   },
 ];
 

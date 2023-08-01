@@ -1,4 +1,4 @@
-import AlmaMatters from './AlmaMatters.jpeg';
+import AlmaMatters2 from './AlmaMatters2.jpeg';
 import EngineeringDay from './EngineeringDay.jpg';
 import LinkedInSession from './LinkedInSession.jpg';
 import AkashSession from './AkashSession.jpeg';
@@ -14,7 +14,7 @@ import SushilKumar from './SushilKumar.jpeg';
 import WingCommander from './WingCommander.jpeg';
 
 export{
-    AlmaMatters,
+    AlmaMatters2,
     EngineeringDay,
     LinkedInSession,
     AkashSession,

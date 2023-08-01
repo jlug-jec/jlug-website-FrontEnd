@@ -34,19 +34,19 @@ const PresentTeamCarousel = () => {
       <Heading heading="Current Seniors Team" info="This Society Has Organized Many Successful Events"/>
       <Carousel responsive={responsive}>
         <div>
-          <MemberCard name = "Samveg Sir" profile = {SamvegSir} designation = "Former-President" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"/>
+          <MemberCard name = "Samveg Sir" profile = {SamvegSir} designation = "Former-President" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?" branch = "Information Technology"/>
         </div>
         <div>
-          <MemberCard name = "MustKeem Sir" profile = {MustkeemSir} designation = "President" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"/>
+          <MemberCard name = "MustKeem Sir" profile = {MustkeemSir} designation = "President" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Information Technology"/>
         </div>
         <div>
-          <MemberCard name = "Klevin Sir" profile = {KlevinSir} designation = "Graphics Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"/>
+          <MemberCard name = "Klevin Sir" profile = {KlevinSir} designation = "Graphics Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Information Technology"/>
         </div>
         <div>
-          <MemberCard name = "Ashwin Sir" profile = {AshwinSir} designation = "Operation Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"/>
+          <MemberCard name = "Ashwin Sir" profile = {AshwinSir} designation = "Operation Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Information Technology"/>
         </div>
         <div>
-          <MemberCard name = "Saket Sir" profile = {SaketSir} designation = "Management Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"/>
+          <MemberCard name = "Saket Sir" profile = {SaketSir} designation = "Management Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Information Technology"/>
         </div>
       </Carousel>
       </>
