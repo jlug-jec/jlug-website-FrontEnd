@@ -25,7 +25,7 @@ const Business = () =>  (
         Why You Should Join <br className="sm:block hidden" /> The JLUG ?
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis earum quibusdam enim neque debitis, animi aut obcaecati ducimus aliquam saepe!
+      Welcome to JLUG, the tech oriented group at our college!<br/>If you are passionate about technology and have a strong desire to learn and explore the realms of tech , JLUG is the perfect place for you. <br/>Here are some of the reasons why You should Join Us-:
       </p>
 
       <Button styles={`mt-10`} />
