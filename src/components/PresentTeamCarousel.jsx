@@ -1,6 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import MemberCard from "./MemberCard";
+import Heading from "./Heading";
 
 import {SamvegSir , KlevinSir , AshwinSir , MustkeemSir , SaketSir} from '../assets/members_Landing'
 
@@ -29,9 +30,9 @@ const PresentTeamCarousel = () => {
 
   return (
     
-      
+      <>
+      <Heading heading="Current Seniors Team" info="This Society Has Organized Many Successful Events"/>
       <Carousel responsive={responsive}>
-      {/* <h1 className="heading text-6xl text-white md:text-4xl md:text-white md:text-center"><span className="italic text-3xl md:text-sm">meet</span>Our Team</h1> */}
         <div>
           <MemberCard name = "Samveg Sir" profile = {SamvegSir} designation = "Former-President" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"/>
         </div>
@@ -48,7 +49,7 @@ const PresentTeamCarousel = () => {
           <MemberCard name = "Saket Sir" profile = {SaketSir} designation = "Management Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"/>
         </div>
       </Carousel>
-   
+      </>
   );
 };
 

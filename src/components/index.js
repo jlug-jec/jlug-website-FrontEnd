@@ -9,6 +9,8 @@ import Footer from "./footer";
 import Testimonials from "./Testimonials";
 import Hero from "./Hero";
 import PresentTeamCarousel from "./PresentTeamCarousel";
+import PreviousEventCarousel from "./PreviousEventCarousel";
+import Heading from "./Heading";
 
 export {
     Navbar,
@@ -22,5 +24,6 @@ export {
     Testimonials,
     Hero,
     PresentTeamCarousel,
-    
+    PreviousEventCarousel,
+    Heading
 };
