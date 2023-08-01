@@ -32,7 +32,7 @@ const PresentTeamCarousel = () => {
     
       <>
       <Heading heading="Current Seniors Team" info="This Society Has Organized Many Successful Events"/>
-      <Carousel responsive={responsive}>
+      <Carousel responsive={responsive} className="mb-11">
         <div>
           <MemberCard name = "Samveg Sir" profile = {SamvegSir} designation = "Former-President" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?" branch = "Information Technology"/>
         </div>
