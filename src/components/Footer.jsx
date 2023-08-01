@@ -15,7 +15,7 @@ const Footer = () => {
           <p className={`${styles.paragraph} mt-4 max-w-[310px] ml-3 mb-8`}>
             A society for growth, exploration, knowledge and many more...
           </p>
-          <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
+          <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-2">
             {footerLinks.map((footerLink) => (
               <div
                 key={footerLink.key}

@@ -25,23 +25,23 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "The Technical Society",
+    title: "Grow Together As A Community",
     content:
-      " Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "With us, you will have the opportunity to learn and grow together with like-minded individuals who share the same passion as You ! We believe in fostering an atmosphere that encourages self-improvement and personal growth while promoting teamwork and collective learning.",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "Workshops And More...",
+    title: "Regular Workshops",
     content:
-      " Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "We organize regular workshops related to tech as well as non tech aimed at your personal growth. These workshops are curated and taken by the experienced community members , tech leaders as well as guest speakers.",
   },
   {
     id: "feature-3",
     icon: send,
     title: "Connection With Alumni",
     content:
-      " Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "JLUG is committed to providing immersive guidance and support to its members.Our experienced mentors and senior members are always available to help you navigate through the Tech world.Count on the JLUG community to have your back, whether you need assistance with installations, programming, or troubleshooting.",
   },
 ];
 

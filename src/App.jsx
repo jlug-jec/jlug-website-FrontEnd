@@ -22,7 +22,6 @@ const App = () => {
           <Stats/>
           <Business/>
           <CardDeal/>
-          <CTA/>
           <Clients/>
 
           {/* ---- Done ---- */}
@@ -30,6 +29,7 @@ const App = () => {
           <PreviousEventCarousel/>
           <PresentTeamCarousel/>
           <Testimonials/>
+          <CTA/>
           <Footer/>
           
         </div>
