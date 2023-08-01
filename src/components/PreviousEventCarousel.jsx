@@ -2,7 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import PreviousEventCard from "./PreviousEventCard";
 
-import {AlmaMatters , EngineeringDay , LinkedInSession} from '../assets/previous_events'
+import {AlmaMatters , EngineeringDay , LinkedInSession , JecX , HenryHarwin} from '../assets/previous_events'
 
 import React from "react";
 import Heading from "./Heading";
@@ -30,10 +30,16 @@ const PreviousEventCarousel = () => {
 
   return (
         <>
-        <Heading heading="Previous Events" info="This Society Has Organized Many Successful Events"/>
+        <Heading heading="Previous Events" info="The society has conducted several workshops which covered a few concrete and significant areas viz Auto cad, Linux, WordPress, Web Development and Robotics, providing certification from eminent institutions."/>
         
       <Carousel responsive={responsive}>
       {/* <h1 className="heading text-6xl text-white md:text-4xl md:text-white md:text-center"><span className="italic text-3xl md:text-sm">meet</span>Our Team</h1> */}
+        <div>
+          <PreviousEventCard eventName = "The JECx Times" profile = {JecX} eventInfo = "JEC’s very own Virtual newsletter. Launched on 31st July 2023. Aimed at updating all with the upcoming events, current news and nourishing the history of JEC . "/>
+        </div>
+        <div>
+          <PreviousEventCard eventName = "Henry Harvin" profile = {HenryHarwin} eventInfo = "A Live Zoom Data science workshop. With specialization in Python programming, data exploration, statistical analysis & machine learning techniques. Organized on 29th July 2023."/>
+        </div>
         <div>
           <PreviousEventCard eventName = "Alma Matters" profile = {AlmaMatters} eventInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"/>
         </div>
