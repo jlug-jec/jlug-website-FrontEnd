@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "../style"
-import {discount, robot} from "../assets";
+import {discount} from "../assets";
+import { home , ai } from '../assets/extra';
 import GetStarted from "./GetStarted"
 const Hero = () => {
   return (
@@ -17,24 +18,23 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss: leading-[100.8px] leading-[75px]">
-            The Next <br className="sm:block hidden"/>{" "}
-            <span className="text-gradient">Generation</span>{" "}  </h1>
+          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
+            {/* Presenting You <br className="sm:block hidden"/>{" "} */}
+            <span className="text-gradient">The JLUG</span>{" "}  </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
-            <GetStarted />
+            <a href="https:google.com"><GetStarted /></a>
           </div>
         </div>
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
-            Payment Method.
+            JEC Linux User Group
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Our team of experts uses a methodology ot identify the credit cards
-          most likely to fit your needs. We examine annual percentage rates, 
-          annual fees.
+        JLUG commenced on 7th  September 2019, is titled as the one the most renowned and only official society of Jabalpur engineering college. The society was brought together with the aim of providing a platform to all the Linux enthusiasts and aspirants in search for an opportunity for growth through peer learning and to help students gain knowledge of LINUX and FOSS through various workshops conducted throughout the year. The founders of the society being Sir Ayushman Parchhoria and Sir Pranshu Mishra, while the society is currently being headed by President Sir Mustkeem Arsh and Vice President Ma’am Ishita Modi. And is responsible for organizing and managing various workshops, fest, programs, etc.
+.
         </p>
       </div>
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-        <img src={robot} alt="billing" className='w-[100%] h-[100%] relative z-[5]' />
+        <img src={home} alt="billing" className='w-[100%] h-[100%] relative z-[5]' />
         {/* gradient start */}
         <div className='absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient'/>
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
