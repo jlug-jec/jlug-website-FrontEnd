@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from "../style"
-import {discount} from "../assets";
 import { home , ai } from '../assets/extra';
 import GetStarted from "./GetStarted"
 const Hero = () => {
