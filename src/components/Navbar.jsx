@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { JLUGLogo } from "../assets/logos";
 
-import { close, logo, menu } from "../assets";
+import { close, menu } from "../assets";
 import { navLinks } from "../constants";
 
 const Navbar = () => {

@@ -1,5 +1,6 @@
 import { JECAA } from "../assets/logos";
 import styles, { layout } from "../style";
+import JeccaButton from "./JecaaButton";
 
 const Billing = () => (
   <section id="jecaa" className={layout.sectionReverse} >
@@ -20,7 +21,7 @@ const Billing = () => (
       <p className={`${styles.paragraph} max-w-[500px] mt-5`}>
       Welcome to JEC Alumni Association. <br/> Wherever you are and whatever commitments you have made in life, we hope that you will ensure and facilitate continual bonding of your Alumni and your Alma mater.<br/>
       The efforts and aim of JECAA is to encourage fellow graduates to connect with the Alma mater and with one another to network and to inspire, mentor and assist in professional development opportunities for young graduates. <br/>
-      <a href="https://www.jecalumni.org/user/login.dz" className="text-[#33bbcf]">Click Here To Redirect To JECAA Portal</a>
+      <a href="https://www.jecalumni.org/user/login.dz"><JeccaButton styles={`mt-10`}/></a>
       </p>
     </div>
   </section>
