@@ -1,9 +1,7 @@
 import Navbar from "./Navbar";
-import Billing from "./Billing";
-import CardDeal from "./CardDeal";
-import Business from "./Business";
-import Clients from "./Clients";
-import CTA from "./CTA";
+import JECAA from "./JECAA";
+import WhyJoin from "./WhyJoin";
+import HowToJoin from "./HowToJoin";
 import Stats from "./Stats";
 import Footer from "./footer";
 import Testimonials from "./Testimonials";
@@ -14,11 +12,9 @@ import Heading from "./Heading";
 
 export {
     Navbar,
-    Billing,
-    CardDeal,
-    Business,
-    Clients,
-    CTA,
+    JECAA,
+    WhyJoin,
+    HowToJoin,
     Stats,
     Footer,
     Testimonials,

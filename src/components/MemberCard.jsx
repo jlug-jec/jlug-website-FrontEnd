@@ -1,5 +1,4 @@
 import React from 'react'
-import { airbnb } from '../assets'
 const MemberCard = (props) => {
   return (
     <div className="my-5 mx-10 text-white">

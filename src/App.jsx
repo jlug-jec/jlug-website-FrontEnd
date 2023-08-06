@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./style";
-import { Navbar, Hero, Billing, CardDeal, Business, Clients, CTA, Stats, Footer, Testimonials, PresentTeamCarousel, PreviousEventCarousel
+import { Navbar, Hero, JECAA, WhyJoin,  HowToJoin, Stats, Footer, Testimonials, PresentTeamCarousel, PreviousEventCarousel
 } from "./components";
 const App = () => {
   return (
@@ -20,18 +20,13 @@ const App = () => {
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart} `}>
         <div className={`${styles.boxWidth}`}>
           <Stats/>
-          <Business/>
-          <CardDeal/>
-          <Clients/>
-
-          {/* ---- Done ---- */}
-          <Billing/>
+          <WhyJoin/>
+          <JECAA/>
           <PreviousEventCarousel/>
           <PresentTeamCarousel/>
           <Testimonials/>
-          <CTA/>
+          <HowToJoin/>
           <Footer/>
-          
         </div>
       </div>
     </div>
