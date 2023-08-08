@@ -1,12 +1,12 @@
 {
-  "homepage": "https://AnushkJain2201.github.io/jlug-website-FrontEnd",
+  "homepage": "https://Aryan-219.github.io/jlug-website-FrontEnd",
   "name": "jlug-website-frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-   "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -15,7 +15,6 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "bootstrap": "^5.3.1",
-    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
@@ -30,6 +29,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.5"
