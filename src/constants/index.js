@@ -19,6 +19,10 @@ export const navLinks = [
     id: "testimonials",
     title: "Testimonials",
   },
+  {
+    id: "joinus",
+    title: "Join Us"
+  }
 ];
 
 export const features = [
