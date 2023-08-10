@@ -12,6 +12,7 @@ import AkshatSir from './AkshatSir.jpg';
 import LuckySir from './LuckySir.jpeg';
 import AnshumannSir from './AnshumannSir.jpeg';
 import PranshuSir from './PranshuSir.jpeg';
+import IshitaMaam from './IshitaMaam.jpeg';
 
 
 export{
@@ -28,5 +29,6 @@ export{
     AkshatSir,
     LuckySir,
     AnshumannSir,
-    PranshuSir
+    PranshuSir,
+    IshitaMaam
 }

@@ -3,7 +3,7 @@ import "react-multi-carousel/lib/styles.css";
 import MemberCard from "./MemberCard";
 import Heading from "./Heading";
 
-import {SamvegSir , KlevinSir , AshwinSir , MustkeemSir , SaketSir, PreetiMaam, UsaidSir, AasthaMaam, AasithSir, HarshitSir, AkshatSir, LuckySir} from '../assets/members_Landing'
+import {SamvegSir , KlevinSir , AshwinSir , MustkeemSir , SaketSir, PreetiMaam, UsaidSir, AasthaMaam, AasithSir, HarshitSir, AkshatSir, LuckySir , IshitaMaam} from '../assets/members_Landing'
 
 import React from "react";
 
@@ -49,7 +49,7 @@ const PresentTeamCarousel = () => {
           <MemberCard name = "Mr. MustKeem Arsh" profile = {MustkeemSir} designation = "President" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Electronics and Communication"/>
         </div>
         <div>
-          <MemberCard name = "Ms. Ishita Modi" profile = {MustkeemSir} designation = "Vice President" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Computer Science"/>
+          <MemberCard name = "Ms. Ishita Modi" profile = {IshitaMaam} designation = "Vice President" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Computer Science"/>
         </div>
         <div>
           <MemberCard name = "Mr. Klevin S Pascal" profile = {KlevinSir} designation = "Cultural Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Computer Science"/>
