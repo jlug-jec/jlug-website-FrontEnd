@@ -1,6 +1,7 @@
 import { JECAA } from "../assets/logos";
 import styles, { layout } from "../style";
 import JeccaButton from "./JecaaButton";
+import { Link } from "react-router-dom";
 
 const Billing = () => (
   <section id="jecaa" className={layout.sectionReverse} >

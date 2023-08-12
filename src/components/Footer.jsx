@@ -1,6 +1,7 @@
 import styles from "../style";
 import { JLUGLogo } from "../assets/logos";
 import { footerLinks, socialMedia } from "../constants";
+import { Link } from "react-router-dom";
 
 const Footer = () => (
   <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
@@ -33,7 +34,7 @@ const Footer = () => (
                     index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
                   }`}
                 >
-                  {link.name}
+                  <Link to="/jlug-website-FrontEnd/pagenotfound/*">{link.name}</Link>
                 </li>
               ))}
             </ul>
