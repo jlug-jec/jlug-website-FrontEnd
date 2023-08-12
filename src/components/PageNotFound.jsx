@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 var container = document.getElementById("containerPage");
 window.onmousemove = function (e) {
-  var x = -e.clientX / 5,
-    y = -e.clientY / 5;
+  var x = - e.clientX/5,
+    y = - e.clientY/5;
   container.style.backgroundPositionX = x + "px";
   container.style.backgroundPositionY = y + "px";
 };
