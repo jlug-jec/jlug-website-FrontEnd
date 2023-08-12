@@ -3,6 +3,7 @@ import { JLUGLogo } from "../assets/logos";
 
 import { close, menu } from "../assets";
 import { navLinks } from "../constants";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -25,6 +26,10 @@ const Navbar = () => {
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
+        <li  className={`font-poppins font-normal cursor-pointer text-[16px] ${
+              active === "The JecX Times" ? "text-white" : "text-dimWhite"
+            } mr-0 ml-6`}
+            onClick={() => setActive("The JecX Times")}><Link to="/jlug-website-FrontEnd/pagenotfound/*">The JecX Times</Link></li>
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -49,9 +54,13 @@ const Navbar = () => {
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
-                <a href={`#${nav.id}`}>{nav.title}</a>
+                <Link to={`#${nav.id}`}>{nav.title}</Link>
               </li>
             ))}
+            <li  className={`font-poppins font-normal cursor-pointer text-[16px] ${
+              active === "The JecX Times" ? "text-white" : "text-dimWhite"
+            } mr-0 mt-4`}
+            onClick={() => setActive("The JecX Times")}><Link to="/jlug-website-FrontEnd/pagenotfound/*">The JecX Times</Link></li>
           </ul>
         </div>
       </div>

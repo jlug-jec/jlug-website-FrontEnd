@@ -23,10 +23,6 @@ export const navLinks = [
     id: "joinus",
     title: "Join Us"
   },
-  {
-    id: "jecx",
-    title: "The JecX Times"
-  }
 ];
 
 export const features = [
@@ -107,20 +103,12 @@ export const footerLinks = [
         link: "https://www.google.com",
       },
       {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-      {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
         name: "Explore",
-        link: "https://www.hoobank.com/explore/",
+        link: "https://www.google.com",
       },
       {
         name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        link: "https://www.google.com",
       },
     ],
   },
@@ -129,23 +117,23 @@ export const footerLinks = [
     links: [
       {
         name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
+        link: "https://www.google.com",
       },
       {
         name: "Partners",
-        link: "https://www.hoobank.com/partners/",
+        link: "https://www.google.com",
       },
       {
         name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
+        link: "https://www.google.com",
       },
       {
         name: "Blog",
-        link: "https://www.hoobank.com/blog/",
+        link: "https://www.google.com",
       },
       {
         name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
+        link: "https://www.google.com",
       },
     ],
   },
@@ -175,11 +163,7 @@ export const socialMedia = [
     icon: facebook,
     link: "https://www.facebook.com/JEC.JLUG",
   },
-  // {
-  //   id: "social-media-3",
-  //   icon: twitter,
-  //   link: "https://www.twitter.com/",
-  // },
+
   {
     id: "social-media-4",
     icon: linkedin,

@@ -1,7 +1,9 @@
 import React from 'react'
 import styles from "../style"
-import { home , ai , boy2 , home2} from '../assets/extra';
+import {home2} from '../assets/extra';
 import GetStarted from "./GetStarted"
+
+import { Link } from 'react-router-dom';
 const Hero = () => {
   return (
     <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
@@ -20,7 +22,7 @@ const Hero = () => {
             {/* Presenting You <br className="sm:block hidden"/>{" "} */}
             <span className="text-gradient">JLUG</span>{" "}  </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
-            <a href="https:google.com"><GetStarted /></a>
+            <Link to="/jlug-website-FrontEnd/pagenotfound/*"><GetStarted /></Link>
           </div>
         </div>
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
@@ -40,7 +42,7 @@ const Hero = () => {
         {/* gradient end */}
       </div>
       <div className={`ss:hidden ${styles.flexCenter}`}>
-      <a href="https:google.com"><GetStarted /></a>
+      <Link to="/jlug-website-FrontEnd/pagenotfound/*"><GetStarted /></Link>
       </div>
     </section>
     
