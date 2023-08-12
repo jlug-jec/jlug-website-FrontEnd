@@ -31,7 +31,9 @@ const PresentTeamCarousel = () => {
   return (
     
       <>
-      <Heading heading="Seniors Team" info="Thanks For Your Guidance For The Benefits Of This Society."/>
+
+      <Heading  heading="Current Seniors Team" info="This Society Has Organized Many Successful Events"/>
+
       <Carousel responsive={responsive} className="mb-11">
       <div className="ml-6">
           <MemberCard name = "Er. Mohammad Usaid" profile = {UsaidSir} designation = "Co-Founder/Former-President" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?" branch = "Electronics And Communication"/>
