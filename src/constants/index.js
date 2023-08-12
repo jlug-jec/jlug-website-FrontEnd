@@ -1,6 +1,6 @@
 import {facebook, instagram, linkedin, twitter,send, shield, star } from "../assets";
 
-import {SamvegSir , MustkeemSir , SaketSir} from '../assets/members_Landing';
+import {AnshumannSir, UsaidSir, PranshuSir} from '../assets/members_Landing';
 
 export const navLinks = [
   {
@@ -19,6 +19,14 @@ export const navLinks = [
     id: "testimonials",
     title: "Testimonials",
   },
+  {
+    id: "joinus",
+    title: "Join Us"
+  },
+  {
+    id: "jecx",
+    title: "The JecX Times"
+  }
 ];
 
 export const features = [
@@ -49,26 +57,26 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "The only thing that feels better than winning is winning when nobody thought you could.",
-    name: "Mr. Samveg Sir",
-    title: "Founder & Leader",
-    img: SamvegSir,
+      "While I’m not a big believer that the past dictates the future, the personal experiences, destinations traveled and the relationships built over the years certainly contribute to the people we are today. ",
+    name: "Er. Ayushman Parchoria",
+    title: "Founder",
+    img: AnshumannSir,
   },
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Mr. Mustkeem Sir",
-    title: "Founder & Leader",
-    img: MustkeemSir,
+      "No matter how much time and effort you put into analysis and predictability, what is expected to happen rarely is what actually occurs.",
+    name: "Er. Pranshu Mishra",
+    title: "Founder",
+    img: PranshuSir,
   },
   {
     id: "feedback-3",
     content:
       "If you want something you've never had, you must be willing to do something you've never done.",
-    name: "Mr. Saket Sir",
-    title: "Founder & Leader",
-    img: SaketSir,
+    name: "Er. Mohammad Usaid",
+    title: "Co-Founder",
+    img: UsaidSir,
   },
 ];
 
@@ -160,21 +168,21 @@ export const socialMedia = [
   {
     id: "social-media-1",
     icon: instagram,
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/jlug_jec/",
   },
   {
     id: "social-media-2",
     icon: facebook,
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/JEC.JLUG",
   },
-  {
-    id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
-  },
+  // {
+  //   id: "social-media-3",
+  //   icon: twitter,
+  //   link: "https://www.twitter.com/",
+  // },
   {
     id: "social-media-4",
     icon: linkedin,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/company/jlug-jec/",
   },
 ];

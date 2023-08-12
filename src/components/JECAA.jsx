@@ -5,7 +5,7 @@ import JeccaButton from "./JecaaButton";
 const Billing = () => (
   <section id="jecaa" className={layout.sectionReverse} >
     <div className={layout.sectionImgReverse}>
-      <img src={JECAA} alt="JECAA" className="w-[350px] h-[350px] relative z-[5] " />
+      <img src={JECAA} alt="JECAA" className="w-[300px] h-[300px] relative z-[5] " />
 
       {/* gradient start */}
       <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />

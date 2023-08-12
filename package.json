@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Aryan-219.github.io/jlug-website-FrontEnd",
+  "homepage": "https://AnushkJain2201.github.io/jlug-website-FrontEnd",
   "name": "jlug-website-frontend",
   "private": true,
   "version": "0.0.0",
@@ -18,7 +18,8 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
-    "react-multi-carousel": "^2.8.4"
+    "react-multi-carousel": "^2.8.4",
+    "react-router-dom": "^6.15.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
