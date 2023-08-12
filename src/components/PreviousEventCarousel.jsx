@@ -35,7 +35,7 @@ const PreviousEventCarousel = () => {
       <Carousel responsive={responsive}>
       {/* <h1 className="heading text-6xl text-white md:text-4xl md:text-white md:text-center"><span className="italic text-3xl md:text-sm">meet</span>Our Team</h1> */}
         <div className="ml-6">
-          <PreviousEventCard eventName = "The JECx Times" profile = {JecX} eventInfo = "JEC’s very own Virtual newsletter. Launched on 31st July 2023. Aimed at updating all with the upcoming events, current news and nourishing the history of JEC . "/>
+          <PreviousEventCard eventName = "The JecX Times" profile = {JecX} eventInfo = "JEC’s very own Virtual newsletter. Launched on 31st July 2023. Aimed at updating all with the upcoming events, current news and nourishing the history of JEC . "/>
         </div>
         <div className="ml-6">
           <PreviousEventCard eventName = "Henry Harvin" profile = {HenryHarwin} eventInfo = "A Live Zoom Data science workshop. With specialization in Python programming, data exploration, statistical analysis & machine learning techniques. Organized on 29th July 2023."/>
