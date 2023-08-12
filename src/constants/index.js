@@ -41,8 +41,8 @@ export const features = [
     icon: send,
     title: "Connection With Alumni",
     content:
-      "JLUG is committed to providing immersive guidance and support to its members.Our experienced mentors and senior members are always available to help you navigate through the Tech world.Count on the JLUG community to have your back, whether you need assistance with installations, programming, or troubleshooting.",
-  },
+      "JLUG is committed to providing immersive guidance and support to its members.Our experienced mentors and senior members are always available to help you navigate through the Tech world \n  . Count on the JLUG community to have your back, whether you need assistance with installations, programming, or troubleshooting."
+  },  
 ];
 
 export const feedback = [
