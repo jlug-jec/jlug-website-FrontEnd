@@ -18,6 +18,20 @@
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem; 
+}
+::-webkit-scrollbar-track {
+  background:  rgb(0 4 15); 
+}
+::-webkit-scrollbar-thumb {
+  background:#bef3f5;
+  border-radius:10px; 
+}
+::-webkit-scrollbar-thumb:hover {
+  
+  background: #7de7eb; 
+}
 .text-gradient {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
@@ -222,3 +236,4 @@
     height: 90%; /* Adjusted height for screens wider than 1200px */
   }
 }
+

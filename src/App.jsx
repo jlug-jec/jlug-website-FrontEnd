@@ -16,7 +16,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/jlug-website-FrontEnd" element={<Home />} />
-        <Route path="/jlug-website-FrontEnd/Newsletter" element={<Newsletter/>} />
+        <Route path="/jlug-website-FrontEnd/newsletter" element={<Newsletter/>} />
         <Route path="/jlug-website-FrontEnd/pagenotfound/*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
