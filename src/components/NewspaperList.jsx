@@ -153,7 +153,7 @@ const NewspaperList = ({newspapers}) => {
               <button className="bg-gray-700 font-poppins text-white px-2 py-1 rounded hover:bg-gray-700 hover:text-blue-500"  onClick={() => handleNewspaperClick(newspaper)}>
                 View
               </button>
-              <button className="bg-gray-700 font-poppins px-2 py-1 rounded  hover:bg-gray-700 hover:text-blue-500">
+              <button className="bg-gray-700 font-poppins  text-white px-2 py-1 rounded  hover:bg-gray-700 hover:text-blue-500">
               <a href="src/assets/newsletter/2nd-edition text-white"  download="2nd-edition.jpg">Download</a>
 
                
