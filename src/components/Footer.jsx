@@ -34,7 +34,7 @@ const Footer = () => (
                     index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
                   }`}
                 >
-                  <Link to="/jlug-website-FrontEnd/pagenotfound/*">{link.name}</Link>
+                  <Link to="/pagenotfound/*">{link.name}</Link>
                 </li>
               ))}
             </ul>
@@ -64,7 +64,7 @@ const Footer = () => (
         </div>
       </div>
       <p className="font-poppins font-normal text-center text-[15px] leading-[27px] text-gray-400 pt-6">
-        Designed By Anushk && Aryan!!!
+        Developed By Anushk Jain && Aryan Agrawal !!!
       </p>
     </div>
   </section>
