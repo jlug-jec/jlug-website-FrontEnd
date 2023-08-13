@@ -7,7 +7,7 @@ const newspapers = [
     {
     id: 1,
     title: 'Edition-1',
-    date:'12/12',
+    date:'31/07/23',
     thumbnail: 'src/assets/newsletter/1st-edition/Page-1.jpg',
     content: [
       'src/assets/newsletter/1st-edition/Page-1.jpg',
@@ -18,7 +18,7 @@ const newspapers = [
   {
     id: 2,
     title: 'Edition-2',
-    date:'12/12',
+    date:'08/08/23',
     thumbnail: 'src/assets/newsletter/2nd-edition/Page-1.jpg',
     content: [
         'src/assets/newsletter/2nd-edition/Page-1.jpg',
@@ -28,16 +28,16 @@ const newspapers = [
     ],
   },
  
-  {
-    id: 3,
-    title: 'Newspaper 3',
-    thumbnail: 'src/assets/newsletter/1st-edition/Page-1.jpg',
-    date:'12/12',
-    content: [
-      'Page 1 content...',
-      'Page 2 content...',
-    ],
-}
+//   {
+//     id: 3,
+//     title: 'Newspaper 3',
+//     thumbnail: 'src/assets/newsletter/1st-edition/Page-1.jpg',
+//     date:'12/12',
+//     content: [
+//       'Page 1 content...',
+//       'Page 2 content...',
+//     ],
+// }
 ];
 
 const Newsletter = () => {
