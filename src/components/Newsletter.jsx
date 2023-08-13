@@ -29,17 +29,6 @@ const newspapers = [
         
     ],
   },
- 
-//   {
-//     id: 3,
-//     title: 'Newspaper 3',
-//     thumbnail: 'src/assets/newsletter/1st-edition/Page-1.jpg',
-//     date:'12/12',
-//     content: [
-//       'Page 1 content...',
-//       'Page 2 content...',
-//     ],
-// }
 ];
 
 const Newsletter = () => {
