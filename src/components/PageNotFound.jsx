@@ -18,7 +18,7 @@ const PageNotFound = () => {
           <h2>404</h2>
           <h4>Oops! Page Not Found</h4>
           <p>Registration Not Started Yet</p>
-          <Link to="/jlug-website-FrontEnd">Back To Home</Link>
+          <Link to="/">Back To Home</Link>
         </div>
       </div>
     </div>

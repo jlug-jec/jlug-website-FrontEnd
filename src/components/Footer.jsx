@@ -34,7 +34,7 @@ const Footer = () => (
                     index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
                   }`}
                 >
-                  <Link to="/jlug-website-FrontEnd/pagenotfound/*">{link.name}</Link>
+                  <Link to="/pagenotfound/*">{link.name}</Link>
                 </li>
               ))}
             </ul>

@@ -29,7 +29,7 @@ const Navbar = () => {
         <li  className={`font-poppins font-normal cursor-pointer text-[16px] ${
               active === "The JecX Times" ? "text-white" : "text-dimWhite"
             } mr-0 ml-6`}
-            onClick={() => setActive("The JecX Times")}><Link to="/jlug-website-FrontEnd/Newsletter">The JecX Times</Link></li>
+            onClick={() => setActive("The JecX Times")}><Link to="/newsletter">The JecX Times</Link></li>
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center z-20">
@@ -60,7 +60,7 @@ const Navbar = () => {
             <li  className={`font-poppins font-normal cursor-pointer text-[16px] ${
               active === "The JecX Times" ? "text-white" : "text-dimWhite"
             } mr-0 mt-4`}
-            onClick={() => setActive("The JecX Times")}><Link to="/jlug-website-FrontEnd/Newsletter">The JecX Times</Link></li>
+            onClick={() => setActive("The JecX Times")}><Link to="/newsletter">The JecX Times</Link></li>
           </ul>
         </div>
       </div>
