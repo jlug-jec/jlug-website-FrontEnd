@@ -18,7 +18,7 @@ const Navbar = () => {
         <li  className={`font-poppins font-normal cursor-pointer text-[16px] ${
               active === "Home" ? "text-white" : "text-dimWhite"
             }  ml-6 mr-48`}
-            onClick={() => setActive("Home")}><Link to="/jlug-website-FrontEnd">Home</Link></li>
+            onClick={() => setActive("Home")}><Link to="/">Home</Link></li>
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center z-20">
