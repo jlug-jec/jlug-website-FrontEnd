@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-
 const NewspaperList = ({newspapers}) => {
     const [selectedNewspaper, setSelectedNewspaper] = useState(null);
     const [currentPage, setCurrentPage] = useState(0);
