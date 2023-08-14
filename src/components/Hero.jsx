@@ -29,7 +29,7 @@ const Hero = () => {
             JEC Linux User Group
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        JLUG commenced on 7th  September 2019, is titled as the one the most renowned and only official society of Jabalpur engineering college. The society was brought together with the aim of providing a platform to all the Linux enthusiasts and aspirants in search for an opportunity for growth through peer learning and to help students gain knowledge of LINUX and FOSS through various workshops conducted throughout the year. The founders of the society being Ayushman Parchhoria Sir and Pranshu Mishra Sir, while the society is currently being headed by President  Mustkeem Arsh Sir and Vice President Ishita Modi Ma’am. And is responsible for organizing and managing various workshops, fest, programs, etc.
+        JLUG commenced on 7th  September 2019, is titled as the one the most renowned and only official society of Jabalpur Engineering College. The society was brought together with the aim of providing a platform to all the Linux enthusiasts and aspirants in search for an opportunity for growth through peer learning and to help students gain knowledge of LINUX and FOSS through various workshops conducted throughout the year. The founders of the society being Mr. Ayushman Parchhoria and Mr. Pranshu Mishra, while the society is currently being headed by Mr. Mustkeem Arsh, President and Ms. Ishita Modi, Vice President. It is responsible for organizing and managing various workshops, fest, programs, etc.
 .
         </p>
       </div>
