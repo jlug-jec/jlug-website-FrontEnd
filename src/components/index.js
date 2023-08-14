@@ -14,6 +14,7 @@ import Home from "./Home";
 import NavBarNewsletter from "./NavBarNewsletter";
 import Mentors from "./Mentors";
 import Founders from "./Founders";
+import Faculty from "./Faculty"
 
 export {
     Navbar,
@@ -31,5 +32,6 @@ export {
     Home,
     NavBarNewsletter,
     Mentors,
-    Founders
+    Founders,
+    Faculty,
 };
