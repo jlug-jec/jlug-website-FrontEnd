@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
 
     <nav className="w-full flex pt-6 justify-between items-center navbar">
-      <img src={JLUGLogo} alt="jlug" className="w-[124px] h-[80px]" />
+      <img src={JLUGLogo} alt="jlug" className="w-[100px] h-[100px] rounded-full m-6" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
