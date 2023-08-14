@@ -3,7 +3,8 @@ import "react-multi-carousel/lib/styles.css";
 import MemberCard from "./MemberCard";
 import Heading from "./Heading";
 
-import {KlevinSir, MustkeemSir, SaketSir, AasithSir, HarshitSir, AkshatSir, LuckySir , IshitaMaam} from '../assets/members_Landing'
+import {KlevinSir, MustkeemSir, SaketSir, AasithSir, HarshitSir, AkshatSir, LuckySir , IshitaMaam,  ShreyaMaam, UrvijaMaam,
+ShristiMaam} from '../assets/members_Landing'
 
 import React from "react";
 
@@ -42,10 +43,7 @@ const PresentTeamCarousel = () => {
           <MemberCard name = "Ms. Ishita Modi" profile = {IshitaMaam} designation = "Vice President" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Computer Science"/>
         </div>
         <div className="ml-6">
-          <MemberCard name = "Mr. Klevin S Pascal" profile = {KlevinSir} designation = "Cultural Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Computer Science"/>
-        </div>
-        <div className="ml-6">
-          <MemberCard name = "Mr. Aasit Babele" profile = {AasithSir} designation = "PR Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Electronics and Communication"/>
+          <MemberCard name = "Mr. Lucky Parihar" profile = {LuckySir} designation = "General Secretary" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Electronics and Communication"/>
         </div>
         <div className="ml-6">
           <MemberCard name = "Mr. Saket Gupta" profile = {SaketSir} designation = "Joint Secretary" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Industrial Production"/>
@@ -54,10 +52,22 @@ const PresentTeamCarousel = () => {
           <MemberCard name = "Mr. Harshit Mehra" profile = {HarshitSir} designation = "Technical Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Computer Science"/>
         </div>
         <div className="ml-6">
-          <MemberCard name = "Mr. Akshat Bansal" profile = {AkshatSir} designation = "Curation Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Computer Science"/>
+          <MemberCard name = "Ms. Urvija Jha" profile = {UrvijaMaam} designation = "Technical Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Electronics and Communication"/>
         </div>
         <div className="ml-6">
-          <MemberCard name = "Mr. Lucky Parihar" profile = {LuckySir} designation = "General Secretary" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Electronics and Communication"/>
+          <MemberCard name = "Mr. Klevin S Pascal" profile = {KlevinSir} designation = "Cultural Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Computer Science"/>
+        </div>
+        <div className="ml-6">
+          <MemberCard name = "Mr. Aasit Babele" profile = {AasithSir} designation = "PR Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Electronics and Communication"/>
+        </div>
+        <div className="ml-6">
+          <MemberCard name = "Ms. Shreya Gupta" profile = {ShreyaMaam} designation = "PR Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Electronics and Communication"/>
+        </div>
+        <div className="ml-6"> 
+          <MemberCard name = "Ms. Shristi Vishwakarma" profile = {ShristiMaam} designation = "Operation Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Computer Science"/>
+        </div>
+        <div className="ml-6">
+          <MemberCard name = "Mr. Akshat Bansal" profile = {AkshatSir} designation = "Curation Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Computer Science"/>
         </div>
       </Carousel>
       </>
