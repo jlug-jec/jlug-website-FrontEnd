@@ -64,7 +64,7 @@ const Footer = () => (
         </div>
       </div>
       <p className="font-poppins font-normal text-center text-[15px] leading-[27px] text-gray-400 pt-6">
-        Developed By Anushk && Aryan && Vikramaditya!!!
+        Designed and developed By Anushk, Aryan & Vikramaditya 
       </p>
     </div>
   </section>
