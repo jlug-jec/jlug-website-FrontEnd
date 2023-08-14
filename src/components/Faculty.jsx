@@ -39,7 +39,7 @@ const PresentTeamCarousel = () => {
           <MemberCard name = "Mrs. Preeti Jain Ma'am" profile = {PreetiMam} designation = "Faculty Coordinator" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = ""/>
         </div>
         <div className="ml-6">
-          <MemberCard name = "Mr. R.Chandak Sir" profile = {ChandakSir} designation = "Faculty Coordinator" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = ""/>
+          <MemberCard name = "Mr. R. Chandak Sir" profile = {ChandakSir} designation = "Faculty Coordinator" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = ""/>
         </div>
         <div className="ml-6">
           <MemberCard name = "Mr. A.K. Sharma Sir" profile = {AKSharmaSir} designation = "Faculty Member" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = ""/>
