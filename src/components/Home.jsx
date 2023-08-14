@@ -20,13 +20,13 @@ const Home = () => {
         <div className={`${styles.boxWidth}`}>
           <Stats/>
           <WhyJoin/>
+          <PreviousEventCarousel/>
           <Faculty/>
           <Founders/>
           <Testimonials/>
           <Mentors/>
           <PresentTeamCarousel/>
           <JECAA/>
-          <PreviousEventCarousel/>
           <HowToJoin/>
           <Footer/>
           {/* <PageNotFound/> */}
