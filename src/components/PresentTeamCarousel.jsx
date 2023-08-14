@@ -3,7 +3,7 @@ import "react-multi-carousel/lib/styles.css";
 import MemberCard from "./MemberCard";
 import Heading from "./Heading";
 
-import {SamvegSir , KlevinSir , AshwinSir , MustkeemSir , SaketSir, PreetiMaam, UsaidSir, AasthaMaam, AasithSir, HarshitSir, AkshatSir, LuckySir , IshitaMaam} from '../assets/members_Landing'
+import {KlevinSir, MustkeemSir, SaketSir, AasithSir, HarshitSir, AkshatSir, LuckySir , IshitaMaam} from '../assets/members_Landing'
 
 import React from "react";
 
@@ -32,21 +32,9 @@ const PresentTeamCarousel = () => {
     
       <>
 
-      <Heading  heading="Seniors Team" info="We Are Very Grateful For Your Contribution To This Society"/>
+      <Heading  heading="Seniors Team" info="Thank you for always inspiring us to put our best foot forward, even we don't feel like we belong. Your constant reassurance has helped us navigate tough times."/>
 
       <Carousel responsive={responsive} className="mb-11">
-      <div className="ml-6">
-          <MemberCard name = "Er. Mohammad Usaid" profile = {UsaidSir} designation = "Co-Founder/Former-President" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?" branch = "Electronics And Communication"/>
-        </div>
-        <div className="ml-6">
-          <MemberCard name = "Er. Aastha Gautam" profile = {AasthaMaam} designation = "Former-Vice President" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?" branch = "Mechanical Engineering"/>
-        </div>
-        <div className="ml-6">
-          <MemberCard name = "Er. Samveg Shandilya" profile = {SamvegSir} designation = "Former-President" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?" branch = "Industrial Production"/>
-        </div>
-        <div className="ml-6">
-          <MemberCard name = "Er. Preeti Patel" profile = {PreetiMaam} designation = "Former-Vice President" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?" branch = "Industrial Production"/>
-        </div>
         <div className="ml-6">
           <MemberCard name = "Mr. MustKeem Arsh" profile = {MustkeemSir} designation = "President" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Electronics and Communication"/>
         </div>
