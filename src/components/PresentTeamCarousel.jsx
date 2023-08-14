@@ -32,7 +32,7 @@ const PresentTeamCarousel = () => {
     
       <>
 
-      <Heading  heading="Seniors Team" info="Thank you for always inspiring us to put our best foot forward, even we don't feel like we belong. Your constant reassurance has helped us navigate tough times."/>
+      <Heading  heading="Current Lead" info="Thank you for always inspiring us to put our best foot forward, even we don't feel like we belong. Your constant reassurance has helped us navigate tough times."/>
 
       <Carousel responsive={responsive} className="mb-11">
         <div className="ml-6">
