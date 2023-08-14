@@ -16,6 +16,7 @@ import IshitaMaam from './IshitaMaam.jpeg';
 import ShreyaMaam from './ShreyaMaam.jpg';
 import UrvijaMaam from './UrvijaMaam.jpg';
 import ShristiMaam from './ShristiMaam.jpg';
+import LavinaMaam from './LavinaMaam.jpeg';
 
 
 export{
@@ -36,5 +37,7 @@ export{
     IshitaMaam,
     ShreyaMaam,
     UrvijaMaam,
-    ShristiMaam
+    ShristiMaam,
+    LavinaMaam
+
 }

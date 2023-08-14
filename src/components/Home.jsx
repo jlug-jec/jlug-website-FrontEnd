@@ -19,10 +19,10 @@ const Home = () => {
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart} `}>
         <div className={`${styles.boxWidth}`}>
           <Stats/>
+          <WhyJoin/>
           <Faculty/>
           <Founders/>
           <Testimonials/>
-          <WhyJoin/>
           <Mentors/>
           <PresentTeamCarousel/>
           <JECAA/>
