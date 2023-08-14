@@ -13,6 +13,9 @@ import LuckySir from './LuckySir.jpeg';
 import AnshumannSir from './AnshumannSir.jpeg';
 import PranshuSir from './PranshuSir.jpeg';
 import IshitaMaam from './IshitaMaam.jpeg';
+import ShreyaMaam from './ShreyaMaam.jpg';
+import UrvijaMaam from './UrvijaMaam.jpg';
+import ShristiMaam from './ShristiMaam.jpg';
 
 
 export{
@@ -30,5 +33,8 @@ export{
     LuckySir,
     AnshumannSir,
     PranshuSir,
-    IshitaMaam
+    IshitaMaam,
+    ShreyaMaam,
+    UrvijaMaam,
+    ShristiMaam
 }

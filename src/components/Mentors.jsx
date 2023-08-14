@@ -32,7 +32,7 @@ const Mentors = () => {
     
       <>
 
-      <Heading  heading="Mentors" info="Your guidance and shared experiences have been invaluable. Thank you for being great leaders."/>
+      <Heading  heading="Former Lead" info="Your guidance and shared experiences have been invaluable. Thank you for being great leaders."/>
 
       <Carousel responsive={responsive} className="mb-11">
       <div className="ml-6">

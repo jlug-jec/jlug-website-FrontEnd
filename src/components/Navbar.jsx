@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
 
     <nav className="w-full flex pt-6 justify-between items-center navbar">
-      <img src={JLUGLogo} alt="jlug" className="w-[124px] h-[80px]" />
+      <img src={JLUGLogo} alt="jlug" className="w-[100px] h-[100px] rounded-full m-6" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
@@ -43,7 +43,7 @@ const Navbar = () => {
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-12 min-w-[140px] rounded-xl sidebar`}
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
             {navLinks.map((nav, index) => (

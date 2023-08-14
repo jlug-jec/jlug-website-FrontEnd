@@ -1,4 +1,4 @@
-import JLUGLogo from './JLUGLogo.png';
+import JLUGLogo from './JLUG.jpeg';
 import JECAA from './JECCA.png';
 
 export{

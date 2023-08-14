@@ -10,7 +10,7 @@ const Footer = () => (
         <img
           src={JLUGLogo}
           alt="JLUG"
-          className="w-[266px] h-[72.14px] object-contain"
+          className="w-[70px] h-[70px] rounded-full ml-[70px]"
         />
         <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
           A Great Society For Fun, Explorations, Interactions, Learning And More...
