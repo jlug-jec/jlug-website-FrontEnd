@@ -1,27 +1,26 @@
-import KlevinSir from './KlevinSir.jpeg';
+import KlevinSir from './KlevinSir.jpg';
 import SamvegSir from './SamvegSir.jpg';
-import AshwinSir from './AshwinSir.jpg';
-import MustkeemSir from './MustkeemSir.jpeg';
+import MustkeemSir from './MustkeemSir.jpg';
 import SaketSir from './SaketSir.jpg';
-import PreetiMaam from './PreetiMaam.jpeg'
-import UsaidSir from './UsaidSir.jpeg';
-import AasthaMaam from './AasthaMaam.jpeg';
-import AasithSir from './AasithSir.jpeg'
-import HarshitSir from './HarshitSir.jpeg';
+import PreetiMaam from './PreetiMaam.jpg'
+import UsaidSir from './UsaidSir.jpg';
+import AasthaMaam from './AasthaMaam.jpg';
+import AasithSir from './AasithSir.jpg'
+import HarshitSir from './HarshitSir.jpg';
 import AkshatSir from './AkshatSir.jpg';
-import LuckySir from './LuckySir.jpeg';
-import AnshumannSir from './AnshumannSir.jpeg';
-import PranshuSir from './PranshuSir.jpeg';
-import IshitaMaam from './IshitaMaam.jpeg';
+import LuckySir from './LuckySir.jpg';
+import AnshumannSir from './AnshumannSir.jpg';
+import PranshuSir from './PranshuSir.jpg';
+import IshitaMaam from './IshitaMaam.jpg';
 import ShreyaMaam from './ShreyaMaam.jpg';
 import UrvijaMaam from './UrvijaMaam.jpg';
 import ShristiMaam from './ShristiMaam.jpg';
+import LavinaMaam from './LavinaMaam.jpg';
 
 
 export{
     KlevinSir,
     SamvegSir,
-    AshwinSir,
     MustkeemSir,
     SaketSir,
     PreetiMaam,
@@ -36,5 +35,7 @@ export{
     IshitaMaam,
     ShreyaMaam,
     UrvijaMaam,
-    ShristiMaam
+    ShristiMaam,
+    LavinaMaam
+
 }

@@ -2,8 +2,9 @@ import React from 'react';
 import NewsletterLayout from './NewsletterLayout';
 import NewspaperList from './NewspaperList';
 
-import { Page1_7, Page2_7, Page3_7 } from '../assets/newsletter/2nd-edition';
 import { Page1_31, Page2_31 } from '../assets/newsletter/1st-edition';
+import { Page1_7, Page2_7, Page3_7 } from '../assets/newsletter/2nd-edition';
+import { Page1_15, Page2_15, Page3_15, Page4_15 } from '../assets/newsletter/3rd-edition';
 
 // Newsletter Data
 const newspapers = [
@@ -26,6 +27,19 @@ const newspapers = [
       Page1_7,
       Page2_7,
       Page3_7,
+        
+    ],
+  },
+  {
+    id: 3,
+    title: 'Edition-3',
+    date:'15/08/23',
+    thumbnail: Page1_15,
+    content: [
+      Page1_15,
+      Page2_15,
+      Page3_15,
+      Page4_15
         
     ],
   },
