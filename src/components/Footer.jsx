@@ -34,7 +34,7 @@ const Footer = () => (
                     index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
                   }`}
                 >
-                  <Link to="/pagenotfound/*">{link.name}</Link>
+                  <Link to={link.link}>{link.name}</Link>
                 </li>
               ))}
             </ul>
@@ -44,10 +44,8 @@ const Footer = () => (
     </div>
 
     <div className="w-full flex flex-col items-center justify-between">
-      <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
-        <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
-          Copyright Ⓒ 2023 JLUG. All Rights Reserved.
-        </p>
+      <div className=" flex justify-between items-center md:flex-row flex-col pt-10 border-t-[1px] border-t-[#3F3E45] pb-10">
+        
 
         <div className="flex flex-row md:mt-0 mt-6">
           {socialMedia.map((social, index) => (
@@ -63,8 +61,11 @@ const Footer = () => (
           ))}
         </div>
       </div>
+      <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
+          Copyright Ⓒ 2023 JLUG. All Rights Reserved.
+        </p>
       <p className="font-poppins font-normal text-center text-[15px] leading-[27px] text-gray-400 pt-6">
-        Designed and developed By Anushk, Aryan & Vikramaditya 
+        Designed and developed By <a href="https://github.com/AnushkJain2201">Anushk</a>, <a href="https://github.com/Aryan-219">Aryan</a> & <a href="https://github.com/Ghat0tkach">Vikramaditya</a>
       </p>
     </div>
   </section>
