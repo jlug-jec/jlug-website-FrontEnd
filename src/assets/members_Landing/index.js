@@ -1,6 +1,6 @@
 import KlevinSir from './KlevinSir.jpg';
 import SamvegSir from './SamvegSir.jpg';
-import MustkeemSir from './MustkeemSir.jpeg';
+import MustkeemSir from './MustkeemSir.jpg';
 import SaketSir from './SaketSir.jpg';
 import PreetiMaam from './PreetiMaam.jpg'
 import UsaidSir from './UsaidSir.jpg';
