@@ -100,15 +100,15 @@ export const footerLinks = [
     links: [
       {
         name: "Content",
-        link: "https://www.google.com",
+        link: "/pagenotfound",
       },
       {
         name: "Explore",
-        link: "https://www.google.com",
+        link: "/pagenotfound",
       },
       {
         name: "Terms & Services",
-        link: "https://www.google.com",
+        link: "/pagenotfound",
       },
     ],
   },
@@ -117,23 +117,23 @@ export const footerLinks = [
     links: [
       {
         name: "Help Center",
-        link: "https://www.google.com",
+        link: "/pagenotfound",
       },
       {
         name: "Partners",
-        link: "https://www.google.com",
+        link: "/pagenotfound",
       },
       {
         name: "Suggestions",
-        link: "https://www.google.com",
+        link: "/pagenotfound",
       },
       {
         name: "Blog",
-        link: "https://www.google.com",
+        link: "/pagenotfound",
       },
       {
         name: "Newsletters",
-        link: "https://www.google.com",
+        link: "/newsletter",
       },
     ],
   },
@@ -142,11 +142,11 @@ export const footerLinks = [
     links: [
       {
         name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
+        link: "/pagenotfound",
       },
       {
         name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
+        link: "/pagenotfound",
       },
     ],
   },
