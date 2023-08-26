@@ -25,7 +25,7 @@ const Home = () => {
           <PresentTeamCarousel/>
           <Testimonials/>
           <HowToJoin/>
-          <Form/>
+          {/* <Form/> */}
           <Footer/>
           {/* <PageNotFound/> */}
         </div>
