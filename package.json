@@ -1,5 +1,5 @@
 {
-  "homepage": "https://AnushkJain2201.github.io/jlug-website-FrontEnd",
+  "homepage": "https://Aryan-219.github.io/jlug-website-FrontEnd",
   "name": "jlug-website-frontend",
   "private": true,
   "version": "0.0.0",
@@ -13,6 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.0.2",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.3.1",
     "framer-motion": "^10.15.1",

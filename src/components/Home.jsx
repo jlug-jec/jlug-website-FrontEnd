@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "../style";
-import { Navbar, Hero, JECAA, WhyJoin,  HowToJoin, Stats, Footer, Testimonials, PresentTeamCarousel, PreviousEventCarousel, Form,
+import { Navbar, Hero, JECAA, WhyJoin,  HowToJoin, Stats, Footer, Testimonials, PresentTeamCarousel, PreviousEventCarousel, Mentors, Founders,Faculty
 } from "./";
 const Home = () => {
   return (
@@ -20,10 +20,13 @@ const Home = () => {
         <div className={`${styles.boxWidth}`}>
           <Stats/>
           <WhyJoin/>
-          <JECAA/>
           <PreviousEventCarousel/>
-          <PresentTeamCarousel/>
+          <Faculty/>
+          <Founders/>
           <Testimonials/>
+          <Mentors/>
+          <PresentTeamCarousel/>
+          <JECAA/>
           <HowToJoin/>
           {/* <Form/> */}
           <Footer/>

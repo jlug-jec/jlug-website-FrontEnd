@@ -11,7 +11,11 @@ import PreviousEventCarousel from "./PreviousEventCarousel";
 import Heading from "./Heading";
 import PageNotFound from "./PageNotFound";
 import Home from "./Home";
-import Form from "./Form";
+import NavBarNewsletter from "./NavBarNewsletter";
+import Mentors from "./Mentors";
+import Founders from "./Founders";
+import Faculty from "./Faculty"
+
 
 export {
     Navbar,
@@ -28,5 +32,8 @@ export {
     Heading,
     PageNotFound,
     Home,
-    
+    NavBarNewsletter,
+    Mentors,
+    Founders,
+    Faculty,
 };

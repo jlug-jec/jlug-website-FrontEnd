@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
 
     <nav className="w-full flex pt-6 justify-between items-center navbar">
-      <img src={JLUGLogo} alt="jlug" className="w-[124px] h-[80px]" />
+      <img src={JLUGLogo} alt="jlug" className="w-[100px] h-[100px] rounded-full m-6" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
@@ -29,10 +29,10 @@ const Navbar = () => {
         <li  className={`font-poppins font-normal cursor-pointer text-[16px] ${
               active === "The JecX Times" ? "text-white" : "text-dimWhite"
             } mr-0 ml-6`}
-            onClick={() => setActive("The JecX Times")}><Link to="/jlug-website-FrontEnd/Newsletter">The JecX Times</Link></li>
+            onClick={() => setActive("The JecX Times")}><Link to="/newsletter">The JecX Times</Link></li>
       </ul>
 
-      <div className="sm:hidden flex flex-1 justify-end items-center">
+      <div className="sm:hidden flex flex-1 justify-end items-center z-20">
         <img
           src={toggle ? close : menu}
           alt="menu"
@@ -43,7 +43,7 @@ const Navbar = () => {
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-12 min-w-[140px] rounded-xl sidebar`}
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
             {navLinks.map((nav, index) => (
@@ -54,13 +54,13 @@ const Navbar = () => {
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
-                <Link to={`#${nav.id}`}>{nav.title}</Link>
+                <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
             ))}
             <li  className={`font-poppins font-normal cursor-pointer text-[16px] ${
               active === "The JecX Times" ? "text-white" : "text-dimWhite"
             } mr-0 mt-4`}
-            onClick={() => setActive("The JecX Times")}><Link to="/jlug-website-FrontEnd/Newsletter">The JecX Times</Link></li>
+            onClick={() => setActive("The JecX Times")}><Link to="/newsletter">The JecX Times</Link></li>
           </ul>
         </div>
       </div>

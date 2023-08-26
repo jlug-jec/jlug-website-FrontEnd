@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-
 const NewspaperList = ({newspapers}) => {
     const [selectedNewspaper, setSelectedNewspaper] = useState(null);
     const [currentPage, setCurrentPage] = useState(0);
@@ -31,7 +30,7 @@ const NewspaperList = ({newspapers}) => {
   <div className="relative group w-80 mt-10">
     <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
     <div className="relative px-10 py-4  h-16 bg-black rounded-lg leading-none flex items-center justify-center divide-x divide-gray-600">
-      <h1 className="text-gray-100 font-poppins font-bold">THE JECX TIMES</h1>
+      <h1 className="text-gray-100 font-poppins font-bold text-3xl">The JecX Times</h1>
     </div>
   </div>
 </div>
@@ -57,7 +56,7 @@ const NewspaperList = ({newspapers}) => {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.5 }}
                 transition={{  type: 'spring', stiffness: 300, damping: 25 , ease:'linear'}}
-                className="bg-white w-11/12 md:w-3/4 lg:w-1/2 h-11/12 md:h-3/4 lg:h-1/2 p-4 rounded-lg shadow-lg relative"
+                className="bg-gray-300 w-11/12 md:w-3/4 lg:w-1/2 h-11/12 md:h-3/4 lg:h-full p-4 rounded-lg shadow-lg relative"
                 style={{
                   '@media (min-width: 1200px)': {
                     width: '41%',
@@ -79,7 +78,7 @@ const NewspaperList = ({newspapers}) => {
                   <img
                     src={newspapers[selectedNewspaper - 1].content[currentPage]}
                     alt={`Page ${currentPage + 1}`}
-                    className="max-h-full max-w-full"
+                    className="max-h-full max-w-full "
                   />
                 </div>
                 <div className="absolute inset-x-0 bottom-0 flex justify-between p-4 bg-gray-900 bg-opacity-75">
