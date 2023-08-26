@@ -11,6 +11,7 @@ import PreviousEventCarousel from "./PreviousEventCarousel";
 import Heading from "./Heading";
 import PageNotFound from "./PageNotFound";
 import Home from "./Home";
+import Form from "./Form";
 
 export {
     Navbar,
@@ -21,9 +22,11 @@ export {
     Footer,
     Testimonials,
     Hero,
+    Form,
     PresentTeamCarousel,
     PreviousEventCarousel,
     Heading,
     PageNotFound,
-    Home
+    Home,
+    
 };

@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "../style";
-import { Navbar, Hero, JECAA, WhyJoin,  HowToJoin, Stats, Footer, Testimonials, PresentTeamCarousel, PreviousEventCarousel,
+import { Navbar, Hero, JECAA, WhyJoin,  HowToJoin, Stats, Footer, Testimonials, PresentTeamCarousel, PreviousEventCarousel, Form,
 } from "./";
 const Home = () => {
   return (
@@ -25,6 +25,7 @@ const Home = () => {
           <PresentTeamCarousel/>
           <Testimonials/>
           <HowToJoin/>
+          <Form/>
           <Footer/>
           {/* <PageNotFound/> */}
         </div>
