@@ -39,7 +39,7 @@ const Form = () => {
     
     let updatedErrors = { ...errors };
     let updatedFormData = { ...formData };
-  
+  // Input Validation
     if (name === 'fullName') {
       const alphabeticalValue = value.replace(/[^A-Za-z ]/g, '');
       updatedFormData[name] = alphabeticalValue;
@@ -85,7 +85,7 @@ const Form = () => {
           onChange={handleInputChange}
         />
      
-      {errors.fullName && <p className="text-red-500 text-center bg-yellow-50 p-2 border rounded-md animate-bounce ">{errors.fullName}</p>}
+         {errors.fullName && <p className="text-red-500 text-center bg-yellow-50 p-2 border rounded-md animate-bounce ">{errors.fullName}</p>}
 
       <input
           required
@@ -97,7 +97,7 @@ const Form = () => {
           onChange={handleInputChange}
         />
      
-      {errors.phoneNumber && <p className="text-red-500 text-center bg-yellow-50 p-2 border rounded-md animate-bounce">{errors.phoneNumber}</p>}
+          {errors.phoneNumber && <p className="text-red-500 text-center bg-yellow-50 p-2 border rounded-md animate-bounce">{errors.phoneNumber}</p>}
 
       
         <input
@@ -110,44 +110,39 @@ const Form = () => {
           onChange={handleInputChange}
         />
 
-{errors.homeTown && <p className="text-red-500 text-center bg-yellow-50 p-2 border rounded-md animate-bounce">{errors.homeTown}</p>}
+          {errors.homeTown && <p className="text-red-500 text-center bg-yellow-50 p-2 border rounded-md animate-bounce">{errors.homeTown}</p>}
 
 
-  <input
-    required
-    className={`w-full p-3 mb-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 focus:animate-pulse transition-all`}
-    type="email"
-    name="email"
-    placeholder="Email"
-    value={formData.email}
-    onChange={handleInputChange}
-  />
+        <input
+          required
+          className={`w-full p-3 mb-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 focus:animate-pulse transition-all`}
+          type="email"
+          name="email"
+          placeholder="Email"
+          value={formData.email}
+          onChange={handleInputChange}
+        />
 
-{errors.email && <p className="text-red-500 text-center bg-yellow-50 p-2 border rounded-md animate-bounce">{errors.email}</p>}
+          {errors.email && <p className="text-red-500 text-center bg-yellow-50 p-2 border rounded-md animate-bounce">{errors.email}</p>}
 
 
-  <select
-    required
-    className={`w-full mb-2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 focus:animate-pulse transition-all`}
-    type="text"
-    name="branch"
-    placeholder="Branch"
-    value={formData.branch}
-    onChange={handleInputChange}
-  >  
-<option value="" disabled>Select Your Branch</option>
-    {branchOptions.sort().map((branch) => (
-      <option key={branch} value={branch}>
-        {branch}
-      </option>
-    ))}
-  </select>
- 
-   {errors.branch && <p className="text-red-500 text-center bg-yellow-50 p-2 border rounded-md animate-bounce">{errors.branch}</p>}
-
-         
-          {/* Repeat similar code for other input fields */}
-          
+        <select
+          required
+          className={`w-full mb-2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 focus:animate-pulse transition-all`}
+          type="text"
+          name="branch"
+          placeholder="Branch"
+          value={formData.branch}
+          onChange={handleInputChange}
+        >  
+              <option value="" disabled>Select Your Branch</option>
+                  {branchOptions.sort().map((branch) => (
+                    <option key={branch} value={branch}>
+                      {branch}
+                    </option>
+                  ))}
+        </select>
+         {errors.branch && <p className="text-red-500 text-center bg-yellow-50 p-2 border rounded-md animate-bounce">{errors.branch}</p>}
           <button
             type="submit"
             className="py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none"
