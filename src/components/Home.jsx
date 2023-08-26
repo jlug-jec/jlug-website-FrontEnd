@@ -28,6 +28,7 @@ const Home = () => {
           <PresentTeamCarousel/>
           <JECAA/>
           <HowToJoin/>
+          {/* <Form/> */}
           <Footer/>
           {/* <PageNotFound/> */}
         </div>
