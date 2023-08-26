@@ -17,8 +17,9 @@ const Form = () => {
   });
   const branchOptions = [
     'Computer Science Engineering',
-    'Artificial Intelligence and Data Science Engineering',
+    'Artificial Intelligence and Data Science',
     'Civil Engineering',
+    'Information Technology',
     'Mechanical Engineering',
     'Industrial and Production Engineering',
     'Mechatronics Engineering',
