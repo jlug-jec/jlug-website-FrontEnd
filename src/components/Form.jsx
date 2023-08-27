@@ -68,9 +68,21 @@ const Form = () => {
     setErrors(updatedErrors);
   };
 
+  
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwxi445YitiTcqYA7u4-oyYCpxIZK-riAgtgV4BnJ-E4CKvlnS52UEEwD2C_Nj5QQ2LUg/exec';
+  const form = document.forms['registrationForm']
+
   const handleSubmit = (event) => {
-    // event.preventDefault();
-    console.log('Form Data:', formData);
+    event.preventDefault();
+    
+    fetch(scriptURL, {method: "POST", body: new FormData(form)})
+    .then(response => alert("Thank You!! Your Form Is Submitted Successfully."))
+    .then(() => {
+      window.location.reload();
+    })
+    .catch(error => 
+      console.log("Error!", error.message)
+      )
   };
 
   return (
@@ -82,7 +94,7 @@ const Form = () => {
       
       <div className=" max-w-md sm:w-full p-6 bg-white rounded-lg shadow-md bg-black-gradient-2">
       <h2 className="font-poppins  font-semibold text-[40px] text-white leading-[66.8px] w-full mb-5">Join The Club</h2>
-      <form className="space-y-6" onSubmit={handleSubmit} method='POST' action='https://script.google.com/macros/s/AKfycbxnD5yrebtrZhCyp8mAZAKcJWbPLQLwCaWoLxp1NShX/dev'>
+      <form className="space-y-6" method='POST' name='registrationForm' onSubmit={handleSubmit}>
       <input
           required
           className={`w-full p-3 mb-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 focus:animate-pulse transition-all`}
@@ -153,8 +165,8 @@ const Form = () => {
                   ))}
         </select>
          {errors.branch && <p className="text-red-500 text-center bg-yellow-50 p-2 border rounded-md animate-bounce">{errors.branch}</p>}
-          <button
-            type="submit"
+          <button onClick={handleSubmit}
+            type="button"
             className="py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none"
           >
             Submit
@@ -168,6 +180,22 @@ const Form = () => {
     </div>
     </div>
   );
+  // const scriptURL = 'https://script.google.com/macros/s/AKfycbxnD5yrebtrZhCyp8mAZAKcJWbPLQLwCaWoLxp1NShX/dev';
+  // const form = document.forms['registrationForm']
+
+  form.addEventListner('submit', e=>{
+    e.preventDefault();
+    fetch(scriptURL, {method: "POST", body: new FormData(form)})
+    .then(response => alert("Thank You!! Your Form Is Submitted Successfully."))
+    .then(() => {
+      window.location.reload();
+    })
+    .catch(error => 
+      console.log("Error!", error.message)
+      )
+  })
 };
+
+
 
 export default Form;
