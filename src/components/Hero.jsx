@@ -22,7 +22,7 @@ const Hero = () => {
             {/* Presenting You <br className="sm:block hidden"/>{" "} */}
             <span className="text-gradient">JLUG</span>{" "}  </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
-            <Link to="/pagenotfound/"><GetStarted /></Link>
+            <Link to="/registrationform"><GetStarted /></Link>
           </div>
         </div>
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
@@ -42,7 +42,7 @@ const Hero = () => {
         {/* gradient end */}
       </div>
       <div className={`ss:hidden ${styles.flexCenter} mb-7`}>
-      <Link to="/pagenotfound/"><GetStarted /></Link>
+      <Link to="/registrationform"><GetStarted /></Link>
       </div>
     </section>
     

@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Footer, Home, PageNotFound} from "./components";
+import {Home, PageNotFound, Form} from "./components";
 
 import {
   BrowserRouter,
@@ -18,6 +18,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/newsletter/*" element={<Newsletter/>} />
         <Route path="/pagenotfound/*" element={<PageNotFound />} />
+        <Route path="/registrationform/*" element={<Form />} />
       </Routes>
     </BrowserRouter>
   );
