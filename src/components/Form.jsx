@@ -82,7 +82,7 @@ const Form = () => {
       
       <div className=" max-w-md sm:w-full p-6 bg-white rounded-lg shadow-md bg-black-gradient-2">
       <h2 className="font-poppins  font-semibold text-[40px] text-white leading-[66.8px] w-full mb-5">Join The Club</h2>
-      <form className="space-y-6" onSubmit={handleSubmit} method='POST' action='https://script.google.com/macros/s/AKfycbwxi445YitiTcqYA7u4-oyYCpxIZK-riAgtgV4BnJ-E4CKvlnS52UEEwD2C_Nj5QQ2LUg/exec'>
+      <form className="space-y-6" onSubmit={handleSubmit} method='POST' action='https://script.google.com/macros/s/AKfycbxnD5yrebtrZhCyp8mAZAKcJWbPLQLwCaWoLxp1NShX/dev'>
       <input
           required
           className={`w-full p-3 mb-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 focus:animate-pulse transition-all`}
