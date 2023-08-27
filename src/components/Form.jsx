@@ -78,7 +78,7 @@ const Form = () => {
     fetch(scriptURL, {method: "POST", body: new FormData(form)})
     .then(response => alert("Thank You!! Your Form Is Submitted Successfully."))
     .then(() => {
-      window.location.reload();
+      window.open("/");
     })
     .catch(error => 
       console.log("Error!", error.message)
