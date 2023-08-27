@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import styles from "../style";
+import { NavBarNewsletter, Footer } from '.';
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -16,15 +18,15 @@ const Form = () => {
     email: '',
   });
   const branchOptions = [
-    'Computer Science Engineering',
-    'Artificial Intelligence and Data Science',
-    'Civil Engineering',
-    'Information Technology',
-    'Mechanical Engineering',
-    'Industrial and Production Engineering',
-    'Mechatronics Engineering',
-    'Electrical Engineering',
-    'Electronics and Communication Engineering',
+    'CSE',
+    'AIADS',
+    'CE',
+    'IT',
+    'ME',
+    'IP',
+    'MTE',
+    'EE',
+    'ECE',
 
   ];
   
@@ -67,15 +69,20 @@ const Form = () => {
   };
 
   const handleSubmit = (event) => {
-    event.preventDefault();
+    // event.preventDefault();
     console.log('Form Data:', formData);
   };
 
   return (
-    <section>
-      <div className="max-w-md w-full p-6 bg-white rounded-lg shadow-md bg-black-gradient-2">
-      <h2 className="font-poppins mb-5 font-semibold text-[40px] text-white leading-[66.8px] w-full">Join The Club</h2>
-      <form className="space-y-6" onSubmit={handleSubmit}>
+    // sm:m-[109px] my-[164px]
+    <div className='bg-primary h-full'>
+      <NavBarNewsletter />
+      <div className='mt-10'>
+    <div className={`flex justify-center align-middle ${styles.paddingX}`}>
+      
+      <div className=" max-w-md sm:w-full p-6 bg-white rounded-lg shadow-md bg-black-gradient-2">
+      <h2 className="font-poppins  font-semibold text-[40px] text-white leading-[66.8px] w-full mb-5">Join The Club</h2>
+      <form className="space-y-6" onSubmit={handleSubmit} method='POST' action='https://script.google.com/macros/s/AKfycbwxi445YitiTcqYA7u4-oyYCpxIZK-riAgtgV4BnJ-E4CKvlnS52UEEwD2C_Nj5QQ2LUg/exec'>
       <input
           required
           className={`w-full p-3 mb-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 focus:animate-pulse transition-all`}
@@ -136,11 +143,13 @@ const Form = () => {
           value={formData.branch}
           onChange={handleInputChange}
         >  
-              <option value="" disabled>Select Your Branch</option>
+              <option value="" disabled >Select Your Branch</option>
                   {branchOptions.sort().map((branch) => (
-                    <option key={branch} value={branch}>
+                    
+                    <option key={branch} value={branch} >
                       {branch}
                     </option>
+    
                   ))}
         </select>
          {errors.branch && <p className="text-red-500 text-center bg-yellow-50 p-2 border rounded-md animate-bounce">{errors.branch}</p>}
@@ -152,7 +161,12 @@ const Form = () => {
           </button>
         </form>
       </div>
-    </section>
+    </div>
+    </div>
+    <div className={`${styles.paddingX}`}>
+    <Footer />
+    </div>
+    </div>
   );
 };
 
