@@ -14,7 +14,9 @@ import Home from "./Home";
 import NavBarNewsletter from "./NavBarNewsletter";
 import Mentors from "./Mentors";
 import Founders from "./Founders";
-import Faculty from "./Faculty"
+import Faculty from "./Faculty";
+import Form from "./Form";
+
 
 export {
     Navbar,
@@ -25,6 +27,7 @@ export {
     Footer,
     Testimonials,
     Hero,
+    Form,
     PresentTeamCarousel,
     PreviousEventCarousel,
     Heading,
