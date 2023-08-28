@@ -16,9 +16,9 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/newsletter/*" element={<Newsletter/>} />
-        <Route path="/pagenotfound/*" element={<PageNotFound />} />
-        <Route path="/registrationform/*" element={<Form />} />
+        <Route path="/newsletter" element={<Newsletter/>} />
+        <Route path="/pagenotfound" element={<PageNotFound />} />
+        <Route path="/registrationform" element={<Form />} />
       </Routes>
     </BrowserRouter>
   );
