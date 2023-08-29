@@ -68,7 +68,7 @@ const Form = () => {
   };
 
   
-  const scriptURL = 'http://form.byharshit.co/add';
+  const scriptURL = 'https://form.byharshit.co/add';
   const form = document.forms['registrationForm']
 
   const handleSubmit = (event) => {
