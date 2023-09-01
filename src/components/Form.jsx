@@ -70,9 +70,18 @@ const Form = () => {
   
   const scriptURL = 'https://form.byharshit.co/add';
   const form = document.forms['registrationForm']
+  // let headers = new Headers();
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    // headers.append('Content-Type', 'application/json');
+    // headers.append('Accept', 'application/json');
+
+    // headers.append('Access-Control-Allow-Origin', 'http://localhost:3000');
+    // headers.append('Access-Control-Allow-Credentials', 'true');
+
+    // headers.append('GET', 'POST', 'OPTIONS');
     
     fetch(scriptURL, {method: "POST", body: new FormData(form)})
     .then(response => alert("Thank You!! Your Form Is Submitted Successfully."))
