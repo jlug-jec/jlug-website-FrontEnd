@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Home, PageNotFound, Form} from "./components";
+import {Home, PageNotFound, Form, RegisterSuccess} from "./components";
 
 import {
   BrowserRouter,
@@ -19,6 +19,7 @@ const App = () => {
         <Route path="/newsletter" element={<Newsletter/>} />
         <Route path="/pagenotfound" element={<PageNotFound />} />
         <Route path="/registrationform" element={<Form />} />
+        <Route path="/registeredsuccessfully" element={<RegisterSuccess/>}/>
       </Routes>
     </BrowserRouter>
   );
