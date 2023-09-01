@@ -49,16 +49,10 @@ const PresentTeamCarousel = () => {
           <MemberCard name = "Mr. Saket Gupta" profile = {SaketSir} designation = "Joint Secretary" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Industrial Production"/>
         </div>
         <div className="ml-6"> 
-          <MemberCard name = "Mr. Harshit Mehra" profile = {HarshitSir} designation = "Technical Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Computer Science"/>
+          <MemberCard name = "Ms. Shristi Vishwakarma" profile = {ShristiMaam} designation = "Operation Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Computer Science"/>
         </div>
         <div className="ml-6">
-          <MemberCard name = "Ms. Urvija Jha" profile = {UrvijaMaam} designation = "Technical Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Electronics and Communication"/>
-        </div>
-        <div className="ml-6">
-          <MemberCard name = "Mr. Klevin S Pascal" profile = {KlevinSir} designation = "Cultural Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Computer Science"/>
-        </div>
-        <div className="ml-6">
-          <MemberCard name = "Ms. Lavina Singh" profile = {LavinaMaam} designation = "Cultural Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Civil Engineering"/>
+          <MemberCard name = "Mr. Akshat Bansal" profile = {AkshatSir} designation = "Operation Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Computer Science"/>
         </div>
         <div className="ml-6">
           <MemberCard name = "Mr. Aasit Babele" profile = {AasithSir} designation = "PR Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Electronics and Communication"/>
@@ -66,11 +60,17 @@ const PresentTeamCarousel = () => {
         <div className="ml-6">
           <MemberCard name = "Ms. Shreya Gupta" profile = {ShreyaMaam} designation = "PR Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Electronics and Communication"/>
         </div>
-        <div className="ml-6"> 
-          <MemberCard name = "Ms. Shristi Vishwakarma" profile = {ShristiMaam} designation = "Operation Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Computer Science"/>
+        <div className="ml-6">
+          <MemberCard name = "Mr. Klevin S Pascal" profile = {KlevinSir} designation = "Cultural Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Computer Science"/>
         </div>
         <div className="ml-6">
-          <MemberCard name = "Mr. Akshat Bansal" profile = {AkshatSir} designation = "Operation Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Computer Science"/>
+          <MemberCard name = "Ms. Lavina Singh" profile = {LavinaMaam} designation = "Cultural Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Civil Engineering"/>
+        </div>
+        <div className="ml-6"> 
+          <MemberCard name = "Mr. Harshit Mehra" profile = {HarshitSir} designation = "Technical Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Computer Science"/>
+        </div>
+        <div className="ml-6">
+          <MemberCard name = "Ms. Urvija Jha" profile = {UrvijaMaam} designation = "Technical Head" info = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolores? Provident sit tempora nobis accusamus dolores error molestiae repellat?"  branch = "Electronics and Communication"/>
         </div>
       </Carousel>
       </>

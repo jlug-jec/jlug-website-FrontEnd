@@ -16,8 +16,8 @@ import Mentors from "./Mentors";
 import Founders from "./Founders";
 import Faculty from "./Faculty";
 import Form from "./Form";
-
-
+import RegisterSuccess from "./RegisterSuccess";
+import RegisCompSuccess from "./RegisCompSuccess";
 export {
     Navbar,
     JECAA,
@@ -37,4 +37,6 @@ export {
     Mentors,
     Founders,
     Faculty,
+    RegisterSuccess,
+    RegisCompSuccess,
 };
