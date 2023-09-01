@@ -27,7 +27,6 @@ const Form = () => {
     'MTE',
     'EE',
     'ECE',
-
   ];
   
   const validateEmail = (email) => {
@@ -69,7 +68,7 @@ const Form = () => {
   };
 
   
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwxi445YitiTcqYA7u4-oyYCpxIZK-riAgtgV4BnJ-E4CKvlnS52UEEwD2C_Nj5QQ2LUg/exec';
+  const scriptURL = 'https://form.byharshit.co/add';
   const form = document.forms['registrationForm']
 
   const handleSubmit = (event) => {
