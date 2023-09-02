@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "../style";
-import { Navbar, Hero, JECAA, WhyJoin,  HowToJoin, Stats, Footer, Testimonials, PresentTeamCarousel, PreviousEventCarousel, Mentors, Founders, Faculty, Form, RegisCompSuccess
+import { NavBarNewsletter, Footer, RegisCompSuccess
 } from "./";
 
 const RegisterSuccess = () => {
@@ -8,7 +8,7 @@ const RegisterSuccess = () => {
         <div className="bg-primary w-full overflow-hidden">
           <div className={`${styles.paddingX} ${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
-              <Navbar/> 
+              <NavBarNewsletter/> 
             </div>
           </div>
           <div className={`bg-primary ${styles.flexStart}`}>

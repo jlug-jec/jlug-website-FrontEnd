@@ -18,15 +18,15 @@ const Form = () => {
     email: '',
   });
   const branchOptions = [
-    'CSE',
+    'CS',
     'AIADS',
     'CE',
     'IT',
     'ME',
     'IP',
-    'MTE',
+    'MT',
     'EE',
-    'ECE',
+    'EC',
   ];
   
   const validateEmail = (email) => {
@@ -70,18 +70,25 @@ const Form = () => {
   
   const scriptURL = 'https://form.byharshit.co/add';
   const form = document.forms['registrationForm']
+  // let headers = new Headers();
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    // headers.append('Content-Type', 'application/json');
+    // headers.append('Accept', 'application/json');
+
+    // headers.append('Access-Control-Allow-Origin', 'http://localhost:3000');
+    // headers.append('Access-Control-Allow-Credentials', 'true');
+
+    // headers.append('GET', 'POST', 'OPTIONS');
     
     fetch(scriptURL, {method: "POST", body: new FormData(form)})
-    .then(response => alert("Thank You!! Your Form Is Submitted Successfully."))
-    .then(() => {
-      window.open("/registeredsuccessfully");
-    })
     .catch(error => 
       console.log("Error!", error.message)
-      )
+    )
+    
+    window.open("/registeredsuccessfully", "_self");
   };
 
   return (
@@ -182,17 +189,17 @@ const Form = () => {
   // const scriptURL = 'https://script.google.com/macros/s/AKfycbxnD5yrebtrZhCyp8mAZAKcJWbPLQLwCaWoLxp1NShX/dev';
   // const form = document.forms['registrationForm']
 
-  form.addEventListner('submit', e=>{
-    e.preventDefault();
-    fetch(scriptURL, {method: "POST", body: new FormData(form)})
-    .then(response => alert("Thank You!! Your Form Is Submitted Successfully."))
-    .then(() => {
-      window.location.reload();
-    })
-    .catch(error => 
-      console.log("Error!", error.message)
-      )
-  })
+  // form.addEventListner('submit', e=>{
+  //   e.preventDefault();
+  //   fetch(scriptURL, {method: "POST", body: new FormData(form)})
+  //   .then(response => alert("Thank You!! Your Form Is Submitted Successfully."))
+  //   .then(() => {
+  //     window.location.reload();
+  //   })
+  //   .catch(error => 
+  //     console.log("Error!", error.message)
+  //     )
+  // })
 };
 
 
