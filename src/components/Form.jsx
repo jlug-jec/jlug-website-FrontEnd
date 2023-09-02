@@ -84,9 +84,8 @@ const Form = () => {
     // headers.append('GET', 'POST', 'OPTIONS');
     
     fetch(scriptURL, {method: "POST", body: new FormData(form)})
-    .then(response => alert("Thank You!! Your Form Is Submitted Successfully."))
     .then(() => {
-      window.open("/registeredsuccessfully");
+      window.open("/registeredsuccessfully", _self);
     })
     .catch(error => 
       console.log("Error!", error.message)
@@ -191,17 +190,17 @@ const Form = () => {
   // const scriptURL = 'https://script.google.com/macros/s/AKfycbxnD5yrebtrZhCyp8mAZAKcJWbPLQLwCaWoLxp1NShX/dev';
   // const form = document.forms['registrationForm']
 
-  form.addEventListner('submit', e=>{
-    e.preventDefault();
-    fetch(scriptURL, {method: "POST", body: new FormData(form)})
-    .then(response => alert("Thank You!! Your Form Is Submitted Successfully."))
-    .then(() => {
-      window.location.reload();
-    })
-    .catch(error => 
-      console.log("Error!", error.message)
-      )
-  })
+  // form.addEventListner('submit', e=>{
+  //   e.preventDefault();
+  //   fetch(scriptURL, {method: "POST", body: new FormData(form)})
+  //   .then(response => alert("Thank You!! Your Form Is Submitted Successfully."))
+  //   .then(() => {
+  //     window.location.reload();
+  //   })
+  //   .catch(error => 
+  //     console.log("Error!", error.message)
+  //     )
+  // })
 };
 
 
