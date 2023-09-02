@@ -18,15 +18,15 @@ const Form = () => {
     email: '',
   });
   const branchOptions = [
-    'CSE',
+    'CS',
     'AIADS',
     'CE',
     'IT',
     'ME',
     'IP',
-    'MTE',
+    'MT',
     'EE',
-    'ECE',
+    'EC',
   ];
   
   const validateEmail = (email) => {
