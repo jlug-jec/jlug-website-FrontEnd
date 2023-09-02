@@ -84,12 +84,11 @@ const Form = () => {
     // headers.append('GET', 'POST', 'OPTIONS');
     
     fetch(scriptURL, {method: "POST", body: new FormData(form)})
-    .then(() => {
-      window.open("/registeredsuccessfully", _self);
-    })
     .catch(error => 
       console.log("Error!", error.message)
-      )
+    )
+    
+    window.open("/registeredsuccessfully", "_self");
   };
 
   return (
