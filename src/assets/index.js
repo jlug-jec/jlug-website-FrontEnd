@@ -12,6 +12,10 @@ import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg"
+import whatsapp from "./whatsapp.svg";
+import facebook2 from "./facebook2.svg";
+import instagram2 from "./instagram2.svg";
+import linkedin2 from "./linkedin2.svg";
 
 export {
   logo,
@@ -28,5 +32,8 @@ export {
   instagram,
   linkedin,
   twitter,
-
+  whatsapp,
+  facebook2,
+  instagram2,
+  linkedin2
 };

@@ -1,7 +1,13 @@
 import JLUGLogo from './JLUG.jpeg';
 import JECAA from './JECCA.png';
+import insta from './insta.png';
+import linkedIn from './linkedIn.png';
+import gmail from './gmail.png';
 
 export{
     JLUGLogo,
-    JECAA
+    JECAA,
+    insta,
+    linkedIn,
+    gmail,
 }
