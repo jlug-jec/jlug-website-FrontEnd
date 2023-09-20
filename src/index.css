@@ -237,3 +237,32 @@
   }
 }
 
+
+/* Define the glow animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 15px rgba(228, 225, 225, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 55px rgba(181, 163, 163, 0.6); /* Adjust the size of the glow */
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(113, 110, 110, 0.6);
+  }
+}
+
+.glow-effect {
+  animation: glow 2s cubic-bezier(0.165, 0.84, 0.44, 1) infinite; /* Use cubic bezier easing */
+  transition: all 5s ease-in-out; /* Use cubic bezier easing */
+}
+
+/* Apply additional styles on hover for a smoother transition */
+.glow-effect:hover {
+  animation: glow 2s cubic-bezier(0.165, 0.84, 0.44, 1) infinite; /* Use cubic bezier easing */
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6)); /* Adjust the glow intensity */
+  opacity: 0.9;
+  background-color: white;
+}
+
+
