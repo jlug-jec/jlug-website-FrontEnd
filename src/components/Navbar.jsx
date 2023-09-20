@@ -8,11 +8,19 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
-
+  
   return (
 
     <nav className="w-full flex pt-6 justify-between items-center navbar">
-      <img src={JLUGLogo} alt="jlug" className="w-[100px] h-[100px] rounded-full m-6" />
+     
+     <a href="https://quiz.jlug.club/" target="_blank"  rel="noopener noreferrer">
+        <img
+          src={JLUGLogo}
+          alt="jlug"
+          className="w-[100px] h-[100px] rounded-full m-6 glow-effect"
+        />
+      </a>
+
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
