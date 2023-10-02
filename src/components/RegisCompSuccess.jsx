@@ -25,7 +25,7 @@ const RegisCompSuccess = () => {
         </div>
         <div className={`flex text-center justify-center flex-col`}>
           <h3 className="text-dimWhite sm:text-[30px] text-[15px]">Meanwhile You Can Join Our WhatsApp Group, To recieve Further Information.</h3>
-          <img src={whatsapp} alt="whatsapp" className={`sm:h-28 h-24 ${styles.marginY}`}/>
+          <a href="https://chat.whatsapp.com/FLKZyndkSbTCbS9YCTwHfq"><img src={whatsapp} alt="whatsapp" className={`sm:h-28 h-24 ${styles.marginY}`}/></a>
         </div>
         <div className={`flex items-center-center justify-center flex-col`}>
           <h3 className="text-dimWhite sm:text-[30px] text-[15px]">Also, You Can Follow Us On Our Social Accounts For Further Information</h3>

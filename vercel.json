@@ -1,9 +1,0 @@
-{
-  "routes": [
-    { "src": "/", "dest": "/" },
-    { "src": "/pagenotfound", "dest": "/" },
-    { "src": "/newsletter", "dest": "/" },
-    { "src": "/registrationform", "dest": "/" },
-    { "src": "/registeredsuccessfully", "dest":"/"} 
-  ]
-}
