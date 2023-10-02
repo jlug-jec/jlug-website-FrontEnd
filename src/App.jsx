@@ -3,7 +3,7 @@ import React from "react";
 import {Home, PageNotFound, Form, RegisterSuccess} from "./components";
 
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -13,7 +13,7 @@ import Newsletter from "./components/Newsletter";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/newsletter" element={<Newsletter/>} />
@@ -21,7 +21,7 @@ const App = () => {
         <Route path="/registrationform" element={<Form />} />
         <Route path="/registeredsuccessfully" element={<RegisterSuccess/>}/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
