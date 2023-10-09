@@ -9,7 +9,7 @@ const Form = () => {
     homeTown: '',
     email: '',
     branch: '',
-    teamInterested: '',
+    teamsInterested: '',
     pastExp: '',
 		whyJoin: '',
   });
@@ -185,23 +185,23 @@ const Form = () => {
          <select
           required
           className={`w-full mb-2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 focus:animate-pulse transition-all`}
-          multiple
           type="text"
-          name="teamInterested"
+          name="teamsInterested"
           placeholder="Team Interested"
           value={formData.teamsInterested}
           onChange={handleInputChange}
+          multiple
         >  
               <option value="" disabled >Team Interested In</option>
-                  {teamsInterested.sort().map((teamInterested) => (
+                  {teamsInterested.sort().map((teamsInterested) => (
                     
-                    <option key={teamInterested} value={teamInterested} >
-                      {teamInterested}
+                    <option key={teamsInterested} value={teamsInterested} multiple>
+                      {teamsInterested}
                     </option>
     
                   ))}
         </select>
-         {errors.teamInterested && <p className="text-red-500 text-center bg-yellow-50 p-2 border rounded-md animate-bounce">{errors.teamInterested}</p>}
+         {errors.teamsInterested && <p className="text-red-500 text-center bg-yellow-50 p-2 border rounded-md animate-bounce">{errors.teamsInterested}</p>}
 
         <textarea
           required
