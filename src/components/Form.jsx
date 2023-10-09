@@ -78,7 +78,7 @@ const Form = () => {
   };
 
   
-  const scriptURL = 'https://form.byharshit.co/add';
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzkOO1-1UJzpqeKSVwiJmvPKldeSh4WkQFoD0UqR4n8zRJm3uz5TjTBGjA3vlYrrag/exec';
   const form = document.forms['registrationForm']
   // let headers = new Headers();
 
