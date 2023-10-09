@@ -190,7 +190,6 @@ const Form = () => {
           placeholder="Team Interested"
           value={formData.teamsInterested}
           onChange={handleInputChange}
-          multiple
         >  
               <option value="" disabled >Team Interested In</option>
                   {teamsInterested.sort().map((teamsInterested) => (
