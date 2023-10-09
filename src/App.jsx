@@ -3,9 +3,9 @@ import React from "react";
 import {Home, PageNotFound, Form, RegisterSuccess} from "./components";
 
 import {
-  BrowserRouter,
   Routes,
   Route,
+  BrowserRouter,
 } from "react-router-dom";
 import Newsletter from "./components/Newsletter";
 
@@ -16,6 +16,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+
         <Route path="/newsletter" element={<Newsletter/>} />
         <Route path="/pagenotfound" element={<PageNotFound />} />
         <Route path="/registrationform" element={<Form />} />
