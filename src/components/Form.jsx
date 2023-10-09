@@ -9,7 +9,7 @@ const Form = () => {
     homeTown: '',
     email: '',
     branch: '',
-    teamsInterested: '',
+    teamInterested: '',
     pastExp: '',
 		whyJoin: '',
   });
@@ -185,6 +185,7 @@ const Form = () => {
          <select
           required
           className={`w-full mb-2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 focus:animate-pulse transition-all`}
+          multiple
           type="text"
           name="teamInterested"
           placeholder="Team Interested"
