@@ -194,7 +194,7 @@ const Form = () => {
               <option value="" disabled >Team Interested In</option>
                   {teamsInterested.sort().map((teamsInterested) => (
                     
-                    <option key={teamsInterested} value={teamsInterested} multiple>
+                    <option key={teamsInterested} value={teamsInterested}>
                       {teamsInterested}
                     </option>
     
