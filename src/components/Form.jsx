@@ -9,6 +9,9 @@ const Form = () => {
     homeTown: '',
     email: '',
     branch: '',
+    teamsInterested: '',
+    pastExp: '',
+		whyJoin: '',
   });
 
   const [errors, setErrors] = useState({
@@ -27,6 +30,13 @@ const Form = () => {
     'MT',
     'EE',
     'EC',
+  ];
+
+  const teamsInterested = [
+    'Management',
+    'Graphic',
+    'Content',
+    'Technical'
   ];
   
   const validateEmail = (email) => {
@@ -68,7 +78,7 @@ const Form = () => {
   };
 
   
-  const scriptURL = 'https://form.byharshit.co/add';
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzkOO1-1UJzpqeKSVwiJmvPKldeSh4WkQFoD0UqR4n8zRJm3uz5TjTBGjA3vlYrrag/exec';
   const form = document.forms['registrationForm']
   // let headers = new Headers();
 
@@ -171,6 +181,47 @@ const Form = () => {
                   ))}
         </select>
          {errors.branch && <p className="text-red-500 text-center bg-yellow-50 p-2 border rounded-md animate-bounce">{errors.branch}</p>}
+
+         <select
+          required
+          className={`w-full mb-2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 focus:animate-pulse transition-all`}
+          type="text"
+          name="teamsInterested"
+          placeholder="Team Interested"
+          value={formData.teamsInterested}
+          onChange={handleInputChange}
+        >  
+              <option value="" disabled >Team Interested In</option>
+                  {teamsInterested.sort().map((teamsInterested) => (
+                    
+                    <option key={teamsInterested} value={teamsInterested}>
+                      {teamsInterested}
+                    </option>
+    
+                  ))}
+        </select>
+         {errors.teamsInterested && <p className="text-red-500 text-center bg-yellow-50 p-2 border rounded-md animate-bounce">{errors.teamsInterested}</p>}
+
+        <textarea
+          required
+          className={`w-full p-3 mb-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 focus:animate-pulse transition-all`}
+          type="textarea"
+          name="pastExp"
+          placeholder="Past Experience In The Chosen Field"
+          value={formData.pastExp}
+          onChange={handleInputChange}
+        />
+
+        <textarea
+          required
+          className={`w-full p-3 mb-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 focus:animate-pulse transition-all`}
+          name="whyJoin"
+          placeholder="Why Do You Want To Join JLUG"
+          value={formData.whyJoin}
+          onChange={handleInputChange}
+        />
+
+
           <button onClick={handleSubmit}
             type="button"
             className="py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none"
