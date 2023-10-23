@@ -78,7 +78,7 @@ const Form = () => {
   };
 
   
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzkOO1-1UJzpqeKSVwiJmvPKldeSh4WkQFoD0UqR4n8zRJm3uz5TjTBGjA3vlYrrag/exec';
+  const scriptURL = 'https://159.65.150.151/add';
   const form = document.forms['registrationForm']
   // let headers = new Headers();
 
@@ -98,7 +98,7 @@ const Form = () => {
       console.log("Error!", error.message)
     )
     
-    window.open("/registeredsuccessfully", "_self");
+    window.open("/#/registeredsuccessfully", "_self");
   };
 
   return (
