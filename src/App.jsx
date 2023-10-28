@@ -11,7 +11,7 @@ import Newsletter from "./components/Newsletter";
 
 
 
-const App = () => {
+const App =() => {
   return (
     <HashRouter>
       <Routes>
