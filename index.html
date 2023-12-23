@@ -1,101 +1,45 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Google Tag Manager -->
-        <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-W3SKSHZV');
-        </script>
-        <!-- End Google Tag Manager -->
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8KSBG4FLSQ"></script>
-        <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
 
-    gtag('config', 'G-8KSBG4FLSQ');
-        </script>
-        <!-- Grafana Observation -->
-        <script>
-        (function () {
-          var webSdkScript = document.createElement("script");
-        
-          webSdkScript.src =
-            "https://unpkg.com/@grafana/faro-web-sdk@^1.0.0/dist/bundle/faro-web-sdk.iife.js";
-        
-          webSdkScript.onload = () => {
-            window.GrafanaFaroWebSdk.initializeFaro({
-              url: "https://faro-collector-prod-ap-south-0.grafana.net/collect/b309b6275f3663b26cfd7b2b7bc2e68d",
-              app: {
-                name: "jlug-web",
-                version: "1.0.0",
-                environment: "production",
-              },
-            });
-        
-        
-            // Load instrumentations at the onLoad event of the web-SDK and after the above configuration.
-            // This is important because we need to ensure that the Web-SDK has been loaded and initialized before we add further instruments!
-            var webTracingScript = document.createElement("script");
-        
-            webTracingScript.src =
-              "https://unpkg.com/@grafana/faro-web-tracing@^1.0.0/dist/bundle/faro-web-tracing.iife.js";
-        
-            // Initialize, configure (if necessary) and add the the new instrumentation to the already loaded and configured Web-SDK.
-            webTracingScript.onload = () => {
-              window.GrafanaFaroWebSdk.faro.instrumentations.add(
-                new window.GrafanaFaroWebTracing.TracingInstrumentation()
-              );
-            };
-        
-            // Append the Web Tracing script script tag to the HTML page
-            document.head.appendChild(webTracingScript);
-          };
-        
-          // Append the Web-SDK script script tag to the HTML page
-          document.head.appendChild(webSdkScript);
-        })();
-        </script>
-        <meta charset="UTF-8">
-        <link rel="icon" type="image/svg+xml" href="/favicon.ico">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="JLUG JEC is one of the most renowned and the only official society of Jabalpur Engineering College started on 7th September 2019.">
-        <meta name="keywords" content="jlug, jlugjec, jlug jec, jabalpur, jlugjec linux, jlugjec linux user club">
-        <title>JLUG-JEC Linux User Club</title>
-    </head>
-    <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript>
-            <iframe
-                src="https://www.googletagmanager.com/ns.html?id=GTM-W3SKSHZV"
-                height="0"
-                width="0"
-                style="display:none;visibility:hidden"
-            ></iframe>
-        </noscript>
-        <!-- End Google Tag Manager (noscript) -->
-        <div id="root"></div>
-        <script type="module" src="/src/main.jsx"></script>
-        <!-- Start of Woopra Code -->
-        <script>
-    !function () { var t, o, c, e = window, n = document, r = arguments, a = "script", i = ["call", "cancelAction", "config", "identify", "push", "track", "trackClick", "trackForm", "update", "visit"], s = function () { var t, o = this, c = function (t) { o[t] = function () { return o._e.push([t].concat(Array.prototype.slice.call(arguments, 0))), o } }; for (o._e = [], t = 0; t < i.length; t++)c(i[t]) }; for (e.__woo = e.__woo || {}, t = 0; t < r.length; t++)e.__woo[r[t]] = e[r[t]] = e[r[t]] || new s; (o = n.createElement(a)).async = 1, o.src = "https://static.woopra.com/js/w.js", (c = n.getElementsByTagName(a)[0]).parentNode.insertBefore(o, c) }("woopra");
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W3SKSHZV');
+    </script>
+    <!-- End Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8KSBG4FLSQ"></script>
+    <!-- Start Google tag (gtag.js) -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    woopra.config({
-      domain: "jlug.club",
-      outgoing_tracking: true,
-      download_tracking: true,
-      click_tracking: true
-    });
+        gtag('config', 'G-8KSBG4FLSQ');
+    </script>
+    <!-- End Google tag (gtag.js) -->
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JLUG JEC is one of the most renowned and the only official society of Jabalpur Engineering College started on 7th September 2019.">
+    <meta name="keywords" content="jlug, jlugjec, jlug jec, jabalpur, jlugjec linux, jlugjec linux user club">
+    <title>JLUG-JEC Linux User Club</title>
+</head>
 
-    woopra.track();
-        </script>
-        <!-- End of Woopra Code -->
-    </body>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3SKSHZV" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
