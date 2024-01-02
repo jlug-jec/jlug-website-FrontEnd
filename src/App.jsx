@@ -5,7 +5,7 @@ import {Home, PageNotFound, Form, RegisterSuccess} from "./components";
 import {
   Routes,
   Route,
-  HashRouter,
+  BrowserRouter,
 } from "react-router-dom";
 import Newsletter from "./components/Newsletter";
 
@@ -13,7 +13,7 @@ import Newsletter from "./components/Newsletter";
 
 const App = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
 
@@ -22,7 +22,7 @@ const App = () => {
         <Route path="/registrationform" element={<Form />} />
         <Route path="/registeredsuccessfully" element={<RegisterSuccess/>}/>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
