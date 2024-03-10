@@ -2,19 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- SPA Redirection script -->
-    <script type="text/javascript">
-        (function (l) {
-            if (l.search[1] === '/') {
-                var decoded = l.search.slice(1).split('&').map(function (s) {
-                    return s.replace(/~and~/g, '&')
-                }).join('?');
-                window.history.replaceState(null, null,
-                    l.pathname.slice(0, -1) + decoded + l.hash
-                );
-            }
-        }(window.location))
-    </script>
     <!-- Start Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8KSBG4FLSQ"></script>
     <script>
@@ -33,8 +20,10 @@
     </script>
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="/favicon.ico">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="JLUG JEC is one of the most renowned and the only official society of Jabalpur Engineering College started on 7th September 2019.">
+    <meta name="description"
+        content="JLUG JEC is one of the most renowned and the only official society of Jabalpur Engineering College started on 7th September 2019.">
     <meta name="keywords" content="jlug, jlugjec, jlug jec, jabalpur, jlugjec linux, jlugjec linux user club">
     <title>JLUG-JEC Linux User Club</title>
 </head>
@@ -42,6 +31,7 @@
 <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
 
 </html>
