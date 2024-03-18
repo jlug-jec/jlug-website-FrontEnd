@@ -81,24 +81,25 @@ const Form = () => {
   const scriptURL =
     "https://send.pageclip.co/sNdsKlmahrtSPx7zRu7Oh5ncEoAemYDT/firstform";
   const form = document.forms["registrationForm"];
-  // let headers = new Headers();
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // headers.append('Content-Type', 'application/json');
-    // headers.append('Accept', 'application/json');
-
-    // headers.append('Access-Control-Allow-Origin', 'http://localhost:3000');
-    // headers.append('Access-Control-Allow-Credentials', 'true');
-
-    // headers.append('GET', 'POST', 'OPTIONS');
-
-    fetch(scriptURL, { method: "POST", body: new FormData(form) }).catch(
-      (error) => console.log("Error!", error.message)
-    );
-
-    window.open("/#/registeredsuccessfully", "_self");
+    fetch(scriptURL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        // If response is ok, open the new window
+        window.open("/registeredsuccessfully", "_self");
+      })
+      .catch((error) => console.log("Error!", error.message));
   };
 
   return (
@@ -115,7 +116,7 @@ const Form = () => {
               className="space-y-6"
               method="POST"
               name="registrationForm"
-              action="https://send.pageclip.co/sNdsKlmahrtSPx7zRu7Oh5ncEoAemYDT/firstform"
+              onSubmit={handleSubmit}
             >
               <input
                 required
@@ -249,7 +250,8 @@ const Form = () => {
               />
 
               <button
-                type="submit"
+                onClick={handleSubmit}
+                type="button"
                 className="py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none"
               >
                 Submit
