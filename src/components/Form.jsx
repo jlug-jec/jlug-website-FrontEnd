@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "../style";
 import { NavBarNewsletter, Footer } from ".";
 
@@ -84,21 +84,21 @@ const Form = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
+  
     fetch(scriptURL, {
       method: "POST",
       body: JSON.stringify(formData),
     })
       .then((response) => {
+        console.log(response);
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
-        // If response is ok, open the new window
         window.open("/registeredsuccessfully", "_self");
       })
       .catch((error) => console.log("Error!", error.message));
   };
-
+  
   return (
     // sm:m-[109px] my-[164px]
     <div className="bg-primary h-full">
