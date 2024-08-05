@@ -79,7 +79,7 @@ const Form = () => {
   };
 
   const scriptURL =
-    "https://send.pageclip.co/sNdsKlmahrtSPx7zRu7Oh5ncEoAemYDT/firstform";
+    "https://script.google.com/macros/s/AKfycbzsaMgooMez4JUzTNz1-2bOni3L5twewRtXuW0b-Zp43xd-Bk5vh6XmUCsCJmTjUUM/exec";
   const form = document.forms["registrationForm"];
 
   const handleSubmit = (event) => {
@@ -87,11 +87,6 @@ const Form = () => {
 
     fetch(scriptURL, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Credentials": true,
-      },
       body: JSON.stringify(formData),
     })
       .then((response) => {
