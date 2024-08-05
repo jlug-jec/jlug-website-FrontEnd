@@ -83,24 +83,25 @@ const Form = () => {
     setErrors(updatedErrors);
   };
 
-  const scriptURL =
-    "https://send.pageclip.co/eTIuyz9EMgwGpP7QOp6gyTMhnaXKEjhd/registration_form";
+  const scriptURL = "https://script.google.com/macros/s/AKfycbzsaMgooMez4JUzTNz1-2bOni3L5twewRtXuW0b-Zp43xd-Bk5vh6XmUCsCJmTjUUM/exec";
   const form = document.forms["registrationForm"];
 
-
   const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault();
+  
+    fetch(scriptURL, {
+      method: "POST",
+      body: JSON.stringify(formData),
+    })
+      .then((response) => {
+        console.log(response);
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        window.open("/registeredsuccessfully", "_self");
+      })
+      .catch((error) => console.log("Error!", error.message));
 
-    // Submit the form using Pageclip
-    const form = formRef.current;
-    if (form) {
-      form.submit();
-    }
-
-    // Redirect after a delay to allow the form submission to complete
-    setTimeout(() => {
-      navigate("/registeredsuccessfully");
-    }, 2000); // Adjust the delay as needed
   };
 
   return (
