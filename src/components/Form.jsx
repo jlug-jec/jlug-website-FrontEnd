@@ -25,7 +25,7 @@ const Form = () => {
   });
   
   const branchOptions = ["CS", "AIADS", "CE", "IT", "ME", "IP", "MT", "EE", "EC"];
-  const teamsInterested = ["Management", "Graphic", "Content", "Technical"];
+  const teamsInterested = ["Management", "Graphic", "Content", "Technical", "Video Editing"];
 
   useEffect(() => {
     // Load Pageclip script
