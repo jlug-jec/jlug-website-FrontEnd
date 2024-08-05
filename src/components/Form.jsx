@@ -80,7 +80,7 @@ const Form = () => {
 
   const scriptURL =
     "https://send.pageclip.co/eTIuyz9EMgwGpP7QOp6gyTMhnaXKEjhd/registration_form";
-  // const form = document.forms["registrationForm"];
+  const form = document.forms["registrationForm"];
 
   const handleSubmit = (event) => {
     event.preventDefault();
