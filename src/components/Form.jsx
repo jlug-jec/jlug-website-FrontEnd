@@ -79,17 +79,14 @@ const Form = () => {
   };
 
   const scriptURL =
-    "https://send.pageclip.co/eTIuyz9EMgwGpP7QOp6gyTMhnaXKEjhd/registration_form";
-  // const form = document.forms["registrationForm"];
+    "https://script.google.com/macros/s/AKfycbzsaMgooMez4JUzTNz1-2bOni3L5twewRtXuW0b-Zp43xd-Bk5vh6XmUCsCJmTjUUM/exec";
+  const form = document.forms["registrationForm"];
 
   const handleSubmit = (event) => {
     event.preventDefault();
   
     fetch(scriptURL, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
       body: JSON.stringify(formData),
     })
       .then((response) => {
