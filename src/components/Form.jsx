@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "../style";
 import { NavBarNewsletter, Footer } from ".";
 
@@ -79,8 +79,8 @@ const Form = () => {
   };
 
   const scriptURL =
-    "https://send.pageclip.co/sNdsKlmahrtSPx7zRu7Oh5ncEoAemYDT/firstform";
-  const form = document.forms["registrationForm"];
+    "https://send.pageclip.co/eTIuyz9EMgwGpP7QOp6gyTMhnaXKEjhd/registration_form";
+  // const form = document.forms["registrationForm"];
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -89,12 +89,11 @@ const Form = () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Credentials": true,
       },
       body: JSON.stringify(formData),
     })
       .then((response) => {
+        console.log(response);
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
