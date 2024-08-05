@@ -84,13 +84,11 @@ const Form = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
+  
     fetch(scriptURL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Credentials": true,
       },
       body: JSON.stringify(formData),
     })
@@ -99,12 +97,11 @@ const Form = () => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
-        // If response is ok, open the new window
         window.open("/registeredsuccessfully", "_self");
       })
       .catch((error) => console.log("Error!", error.message));
   };
-
+  
   return (
     // sm:m-[109px] my-[164px]
     <div className="bg-primary h-full">
