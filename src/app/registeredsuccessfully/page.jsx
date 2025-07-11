@@ -1,4 +1,4 @@
-import RegisterSuccess from "../../components/RegisterSuccess";
+import RegisterSuccess from "../components/RegisterSuccess";
 
 
 export default function Page() {
