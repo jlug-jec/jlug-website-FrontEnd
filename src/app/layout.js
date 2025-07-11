@@ -8,7 +8,10 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "JLUG | JEC Linux User Group",
+  title: "JLUG-JEC Linux User Group",
+  icons:{
+    icon: "/JLUGLogo.svg", 
+  },
   description: "Official JLUG Registration Website",
 };
 
