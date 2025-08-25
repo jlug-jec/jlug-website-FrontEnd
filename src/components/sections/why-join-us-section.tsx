@@ -1,41 +1,52 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
-import { Button } from '@/components/ui/button';
-import CardSwap, { Card } from '../ui/react-bits/cards';
+import { useState, useEffect } from 'react';
 import { contentData } from '@/constants';
 
 const WhyJoin = () => {
   const [activeCard, setActiveCard] = useState(0);
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const [isClient, setIsClient] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
-  // Handle automatic rotation
+  // Ensure component is mounted before starting auto-rotation
   useEffect(() => {
-    const startAutoRotation = () => {
-      intervalRef.current = setInterval(() => {
-        setActiveCard(prev => (prev + 1) % 3);
-      }, 5000);
-    };
-
-    startAutoRotation();
-
-    return () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
-    };
+    setIsClient(true);
   }, []);
 
-  const handleCardClick = (index: number) => {
-    setActiveCard(index);
-  };
+  // Defer visibility to prevent blocking LCP
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 3000); // 3 second delay to prioritize hero text
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Handle automatic rotation only after initial render and visibility
+  useEffect(() => {
+    if (!isClient || !isVisible) return;
+
+    const interval = setInterval(() => {
+      setActiveCard(prev => (prev + 1) % 3);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [isClient, isVisible]);
 
   return (
     <section
       id="features"
-      className="py-20 px-6 bg-gradient-to-b from-black to-gray-900 overflow-hidden"
+      className="sm:mt-90 mt-[42rem] md:mt-10 py-20 px-6 bg-gradient-to-b from-black to-gray-900 overflow-hidden relative"
+      style={{
+        opacity: isVisible ? 1 : 0.3,
+        transition: 'opacity 0.5s ease-in-out',
+      }}
     >
-      <div className="w-full max-w-6xl mx-auto">
+      {/* Background gradient effects */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5"></div>
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+      <div className="w-full max-w-6xl mx-auto mb-20">
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
             Why Join Us?
@@ -46,105 +57,99 @@ const WhyJoin = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-          <div className="space-y-6 text-center lg:text-left lg:pt-8 transition-all duration-500 ease-in-out">
-            <div className="space-y-4 transition-all duration-500 ease-in-out">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight transition-all duration-500 ease-in-out">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          {/* Content Section */}
+          <div className="space-y-6 text-center lg:text-left">
+            <div className="space-y-4">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
                 {contentData[activeCard].title}
                 <br />
-                <span className="text-gray-400 transition-all duration-500 ease-in-out">
+                <span className="text-gray-400">
                   {contentData[activeCard].subtitle}
                 </span>
               </h2>
 
-              <p className="text-lg sm:text-xl text-gray-300 leading-relaxed transition-all duration-500 ease-in-out">
+              <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
                 {contentData[activeCard].description}
               </p>
             </div>
 
-            <div className="space-y-4 transition-all duration-500 ease-in-out">
-              <p className="text-sm sm:text-base text-gray-400 leading-relaxed max-w-xl mx-auto lg:mx-0 transition-all duration-500 ease-in-out">
+            <div className="space-y-4">
+              <p className="text-sm sm:text-base text-gray-400 leading-relaxed max-w-xl mx-auto lg:mx-0">
                 {contentData[activeCard].details}
               </p>
             </div>
-
-            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-4 transition-all duration-500 ease-in-out">
-              <Button
-                className={`px-6 py-2.5 rounded-full font-medium transition-all duration-500 ease-in-out transform hover:scale-105 ${
-                  contentData[activeCard].buttonVariant === 'primary'
-                    ? 'bg-green-500 hover:bg-green-600 text-white'
-                    : 'border-2 border-white/30 text-white hover:bg-white/10 bg-transparent'
-                }`}
-              >
-                {contentData[activeCard].buttonText}
-              </Button>
-              <Button
-                variant="outline"
-                className="border-2 border-white/30 text-white hover:bg-white/10 px-6 py-2.5 rounded-full font-medium transition-all duration-500 ease-in-out bg-transparent"
-              >
-                Learn More
-              </Button>
-            </div>
           </div>
 
-          <div className="flex justify-center lg:justify-end ml-60 pointer-events-none">
-            <div style={{ height: '450px', position: 'relative' }}>
-              <CardSwap
-                cardDistance={60}
-                verticalDistance={70}
-                delay={5000}
-                pauseOnHover={false}
-                onCardClick={handleCardClick}
-                easing="elastic"
-              >
-                <Card heading="Linux Workshop">
-                  <div className="text-white">
-                    <img
-                      src="/assets/previous_events/Linux.jpg"
-                      alt="Linux Workshop"
-                      className="w-full h-32 object-cover rounded-lg mb-3"
-                    />
-                    <h3 className="text-xl font-bold mb-2">
-                      Linux Fundamentals
-                    </h3>
-                    <p className="text-gray-300 text-sm">
-                      Learn the basics of Linux command line and system
-                      administration
-                    </p>
-                  </div>
-                </Card>
-                <Card heading="Hackathon">
-                  <div className="text-white">
-                    <img
-                      src="/assets/previous_events/Hackathon.jpg"
-                      alt="Hackathon Event"
-                      className="w-full h-32 object-cover rounded-lg mb-3"
-                    />
-                    <h3 className="text-xl font-bold mb-2">
-                      24-Hour Challenge
-                    </h3>
-                    <p className="text-gray-300 text-sm">
-                      Participate in exciting hackathons and build amazing
-                      projects
-                    </p>
-                  </div>
-                </Card>
-                <Card heading="Community Meet">
-                  <div className="text-white">
-                    <img
-                      src="/assets/previous_events/Community.jpg"
-                      alt="Community Meet"
-                      className="w-full h-32 object-cover rounded-lg mb-3"
-                    />
-                    <h3 className="text-xl font-bold mb-2">
-                      Network & Connect
-                    </h3>
-                    <p className="text-gray-300 text-sm">
-                      Meet fellow tech enthusiasts and industry professionals
-                    </p>
-                  </div>
-                </Card>
-              </CardSwap>
+          {/* Visual Section */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="w-full max-w-md">
+              {/* Progress Indicators */}
+              <div className="flex justify-center lg:justify-end gap-2 mb-6">
+                {[0, 1, 2].map(index => (
+                  <button
+                    key={index}
+                    onClick={() => setActiveCard(index)}
+                    aria-label={`Go to slide ${index + 1}`}
+                    aria-pressed={activeCard === index}
+                    className={`w-4 h-4 rounded-full transition-all duration-300 ${
+                      activeCard === index
+                        ? 'bg-white scale-110'
+                        : 'bg-white/30 hover:bg-white/50'
+                    }`}
+                  />
+                ))}
+              </div>
+
+              {/* Feature Cards */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-4">
+                {[
+                  {
+                    title: 'Linux Workshop',
+                    description:
+                      'Learn the basics of Linux command line and system administration',
+                    icon: '🐧',
+                  },
+                  {
+                    title: 'Hackathon',
+                    description:
+                      'Participate in exciting hackathons and build amazing projects',
+                    icon: '💻',
+                  },
+                  {
+                    title: 'Community Meet',
+                    description:
+                      'Meet fellow tech enthusiasts and industry professionals',
+                    icon: '🤝',
+                  },
+                ].map((feature, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setActiveCard(index)}
+                    aria-label={`Select ${feature.title} - ${feature.description}`}
+                    aria-pressed={activeCard === index}
+                    className={`p-4 rounded-lg border transition-all duration-300 cursor-pointer text-left w-full ${
+                      activeCard === index
+                        ? 'border-white/50 bg-white/5'
+                        : 'border-white/20 bg-transparent hover:border-white/30'
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl" aria-hidden="true">
+                        {feature.icon}
+                      </span>
+                      <div className="text-left">
+                        <h3 className="text-white font-semibold text-sm sm:text-base">
+                          {feature.title}
+                        </h3>
+                        <p className="text-gray-400 text-xs sm:text-sm mt-1">
+                          {feature.description}
+                        </p>
+                      </div>
+                    </div>
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         </div>

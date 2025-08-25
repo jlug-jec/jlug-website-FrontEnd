@@ -2,7 +2,6 @@ import React from 'react';
 import { NavbarComponent } from '@/components/ui/navbar';
 import Galaxy from '../ui/react-bits/galaxy';
 import Hero from './hero';
-import { JLUGStats } from '../ui/animated-stats';
 import WhyJoinUsSection from './why-join-us-section';
 import { PreviousEventCarouselComponent } from './previous-events-section';
 import FacultySectionComponent from './faculty-section';
@@ -11,12 +10,14 @@ import Testimonials from './testimonials';
 import MeetTeamCTA from './meet-team-section';
 import GallerySection from './gallery-section';
 import Footer from '../layout/Footer';
+import JECCASection from './jecca-section';
 
 const Home = () => {
   return (
     <div className="w-full h-full bg-black ">
       <NavbarComponent className="z-50 mt-10" />
       <div
+        id="home"
         style={{
           width: '100%',
           height: '100vh',
@@ -42,22 +43,25 @@ const Home = () => {
         <div className="absolute inset-0 z-50">
           <Hero />
         </div>
-        <div className="bg-black backdrop-blur-lg border border-white/10">
-          <div className="flex flex-col items-center justify-center mt-10 z-50">
-            <h1 className="text-white text-2xl font-bold mb-10">
-              Our Number speaks for us
-            </h1>
-            <JLUGStats />
-          </div>
-        </div>
+      </div>
+
+      {/* Rest of the sections */}
+      <div className="relative z-40">
         <WhyJoinUsSection />
-        <PreviousEventCarouselComponent />
-        <FacultySectionComponent />
-        <FounderSectionComponent />
-        <Testimonials />
-        <MeetTeamCTA />
+        <div id="events">
+          <PreviousEventCarouselComponent />
+        </div>
+        <div id="team">
+          <MeetTeamCTA />
+          <FacultySectionComponent />
+          <FounderSectionComponent />
+          <Testimonials />
+        </div>
         <GallerySection />
-        <Footer />
+        <JECCASection />
+        <div id="contact">
+          <Footer />
+        </div>
       </div>
     </div>
   );

@@ -3,6 +3,8 @@
 import { Users } from 'lucide-react';
 import { TerminalDemo } from '@/components/ui/magicui/terminal';
 import Link from 'next/link';
+import { buttonData } from '@/constants';
+import { ShimmerButton } from '../ui/magicui/shimmer-button';
 
 export default function MeetTeamCTA() {
   return (
@@ -39,17 +41,15 @@ export default function MeetTeamCTA() {
 
             {/* Features */}
             <div className="grid grid-cols-2 gap-4">
-              <Link href="/team">
-                <div className="flex items-center gap-3 p-3 bg-slate-800/50 rounded-xl border border-slate-700/50">
-                  <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
-                    <Users className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <div className="text-white font-semibold">
-                      Meet Our Team
-                    </div>
-                  </div>
-                </div>
+              <Link href={buttonData['Meet Our Team']}>
+                <ShimmerButton
+                  shimmerColor="#ffffff"
+                  shimmerSize="0.05em"
+                  shimmerDuration="3s"
+                  className="text-white font-semibold text-lg px-8 py-4 flex items-center justify-between"
+                >
+                  <span>Meet Our Team</span>
+                </ShimmerButton>
               </Link>
             </div>
           </div>

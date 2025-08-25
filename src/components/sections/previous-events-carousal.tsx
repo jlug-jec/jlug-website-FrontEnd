@@ -42,7 +42,7 @@ export const PreviousEventCarousel = ({
     return Math.floor(Math.random() * 21) - 10;
   };
   return (
-    <div className="mx-auto max-w-sm px-4 py-20 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12 overflow-hidden">
+    <div className="w-full px-4 py-20 font-sans antialiased md:px-8 lg:px-12 overflow-hidden bg-gradient-to-b from-gray-900 to-black">
       <div className="relative z-10 text-center mb-8 md:mb-12 lg:mb-16 px-4 ">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -91,7 +91,7 @@ export const PreviousEventCarousel = ({
           Discover the magic moments we&apos;ve created together
         </motion.p>
       </div>
-      <div className="relative grid grid-cols-1 gap-40 md:grid-cols-2">
+      <div className="relative grid grid-cols-1 gap-8 md:gap-12 lg:gap-16 md:grid-cols-2">
         <div>
           <div className="relative h-96 w-96">
             <AnimatePresence>

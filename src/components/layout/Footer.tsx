@@ -22,7 +22,7 @@ const Footer = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-16 lg:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           {/* Brand Section */}
-          <div className="lg:col-span-5 space-y-6">
+          <div className="lg:col-span-4 space-y-6">
             <div className="flex items-center space-x-4">
               <div className="relative">
                 <img
@@ -36,12 +36,6 @@ const Footer = () => {
                 <p className="text-sm text-slate-400">Tech Community</p>
               </div>
             </div>
-
-            <p className="text-slate-300 leading-relaxed max-w-md">
-              A Great Society For Fun, Explorations, Interactions, Learning And
-              More... Join our vibrant community of developers, designers, and
-              tech enthusiasts.
-            </p>
 
             {/* Social Media */}
             <div className="flex items-center space-x-4">
@@ -66,33 +60,13 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Links Section */}
-          <div className="lg:col-span-7">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-              {footerLinks.map(footerlink => (
-                <div key={footerlink.title} className="space-y-4">
-                  <h4 className="text-lg font-semibold text-white relative">
-                    {footerlink.title}
-                    <div className="absolute -bottom-1 left-0 w-8 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"></div>
-                  </h4>
-                  <ul className="space-y-3">
-                    {footerlink.links.map(link => (
-                      <li key={link.name}>
-                        <Link
-                          href={link.link}
-                          className="group flex items-center text-slate-400 hover:text-white transition-colors duration-200"
-                        >
-                          <span className="group-hover:translate-x-1 transition-transform duration-200">
-                            {link.name}
-                          </span>
-                          <ArrowUpRight className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-all duration-200" />
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
+          {/* Bio Section - Moved to Right */}
+          <div className="lg:col-span-8 flex items-center">
+            <p className="text-slate-300 leading-relaxed text-lg max-w-2xl">
+              A Great Society For Fun, Explorations, Interactions, Learning And
+              More... Join our vibrant community of developers, designers, and
+              tech enthusiasts.
+            </p>
           </div>
         </div>
       </div>

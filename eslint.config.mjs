@@ -1,6 +1,6 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
+import { FlatCompat } from '@eslint/eslintrc';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -10,28 +10,28 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals"),
+  ...compat.extends('next/core-web-vitals'),
   {
     ignores: [
-      "node_modules/**",
-      ".next/**",
-      "build/**",
-      "dist/**",
-      "coverage/**",
-      "*.log",
-      ".env*",
-      ".DS_Store",
-      "package-lock.json",
-      "pnpm-lock.yaml",
-      "yarn.lock"
-    ]
+      'node_modules/**',
+      '.next/**',
+      'build/**',
+      'dist/**',
+      'coverage/**',
+      '*.log',
+      '.env*',
+      '.DS_Store',
+      'package-lock.json',
+      'pnpm-lock.yaml',
+      'yarn.lock',
+    ],
   },
   {
     rules: {
       // Disable the problematic react-hooks/exhaustive-deps rule temporarily
-      "react-hooks/exhaustive-deps": "off"
-    }
-  }
+      'react-hooks/exhaustive-deps': 'off',
+    },
+  },
 ];
 
 export default eslintConfig;

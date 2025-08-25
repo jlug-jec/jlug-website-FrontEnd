@@ -1,23 +1,19 @@
 export const navItems = [
   {
     name: 'Home',
-    link: '/',
+    link: '#home',
   },
   {
-    name: 'About',
-    link: '/about',
+    name: 'Team',
+    link: '/team',
   },
   {
     name: 'Events',
-    link: '/events',
-  },
-  {
-    name: 'Newsletter',
-    link: '/newsletter',
+    link: '#events',
   },
   {
     name: 'Contact',
-    link: '/contact',
+    link: '#contact',
   },
 ];
 
@@ -91,22 +87,12 @@ export const socialMedia = [
   {
     id: 'social-media-1',
     icon: '/assets/instagram.svg',
-    link: 'https://www.instagram.com/',
-  },
-  {
-    id: 'social-media-2',
-    icon: '/assets/facebook.svg',
-    link: 'https://www.facebook.com/',
-  },
-  {
-    id: 'social-media-3',
-    icon: '/assets/twitter.svg',
-    link: 'https://www.twitter.com/',
+    link: 'https://www.instagram.com/jlug_jec',
   },
   {
     id: 'social-media-4',
     icon: '/assets/linkedin.svg',
-    link: 'https://www.linkedin.com/',
+    link: 'https://www.linkedin.com/company/jlug-jec/',
   },
 ];
 
@@ -142,3 +128,9 @@ export const contentData = [
     buttonVariant: 'primary',
   },
 ];
+
+export const buttonData = {
+  'Join Us': 'https://www.instagram.com/jlug_jec',
+  'Meet Our Team': '/team',
+  'JECAA Portal': 'https://www.jecalumni.org/user/login.dz',
+};

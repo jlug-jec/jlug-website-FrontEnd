@@ -129,24 +129,22 @@ export function TerminalDemo() {
         &gt; sudo join jlug --now
       </TypingAnimation>
       <AnimatedSpan delay={1500} className="text-green-400">
-        <span>✔ Found the most legendary folks on campus.</span>
+        <span>✔ Connecting to JLUG community...</span>
       </AnimatedSpan>
       <AnimatedSpan delay={2000} className="text-green-400">
-        <span>✔ Not just coders — designers,</span>
-        <span> photographers, writers, dreamers</span>
+        <span>✔ Tech workshops and events available</span>
       </AnimatedSpan>
       <AnimatedSpan delay={2500} className="text-green-400">
-        <span>✔ Big things happening at college? </span>
-        <span>Yeah, we&apos;re probably behind it.</span>
+        <span>✔ Linux and open source projects</span>
       </AnimatedSpan>
       <AnimatedSpan delay={3000} className="text-green-400">
         <span>✔ We don’t follow trends — we set them.</span>
       </AnimatedSpan>
       <AnimatedSpan delay={3500} className="text-green-400">
-        <span>✔ Learned from the best. Now *we* are the best.</span>
+        <span>✔ Skill development and mentorship</span>
       </AnimatedSpan>
       <TypingAnimation delay={6000} className="text-purple-400">
-        JLUG initialized. Terminal access granted.
+        Welcome to JLUG. Ready to code.
       </TypingAnimation>
     </Terminal>
   );

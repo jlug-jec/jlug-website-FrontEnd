@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const PreviousEventCard = (props: {
   profile: string;
@@ -8,8 +9,11 @@ const PreviousEventCard = (props: {
   return (
     <div className="my-5 mx-10 text-white">
       <div className="basis-64 group lg:flex lg:flex-col lg:items-center">
-        <img
+        <Image
           src={props.profile}
+          alt={props.eventName}
+          width={240}
+          height={224}
           className="h-56 w-60 cursor-pointer rounded-md"
         />
         <h3 className="mt-7 text-4xl">{props.eventName}</h3>

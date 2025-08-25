@@ -1,4 +1,13 @@
-import { SVGProps } from 'react';
+'use client';
+
+import { SVGProps, useState, useEffect } from 'react';
+
+// Extend Window interface for gtag
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+  }
+}
 
 export interface AndroidProps extends SVGProps<SVGSVGElement> {
   width?: number;
@@ -14,6 +23,41 @@ export default function Android({
   videoSrc,
   ...props
 }: AndroidProps) {
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
+  const [videoError, setVideoError] = useState(false);
+
+  useEffect(() => {
+    // Lazy load video when component is in viewport
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setShouldLoadVideo(true);
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '50px' }
+    );
+
+    const element = document.querySelector('[data-android-component]');
+    if (element) {
+      observer.observe(element);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  const handleVideoError = () => {
+    setVideoError(true);
+    setIsVideoLoaded(true); // Show fallback immediately
+  };
+
+  const handleVideoLoad = () => {
+    setIsVideoLoaded(true);
+  };
+
   return (
     <svg
       width={width}
@@ -21,6 +65,7 @@ export default function Android({
       viewBox="0 0 500 882"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      data-android-component
       {...props}
     >
       {/* Phone Shadow */}
@@ -97,6 +142,7 @@ export default function Android({
         strokeWidth="0.5"
       />
       <circle cx="189" cy="28" r="4" fill="#222222" />
+
       {src && (
         <image
           href={src}
@@ -107,7 +153,8 @@ export default function Android({
           clipPath="url(#clip0_514_20855)"
         />
       )}
-      {videoSrc && (
+
+      {videoSrc && shouldLoadVideo && !videoError && (
         <foreignObject
           x="9"
           y="14"
@@ -122,9 +169,68 @@ export default function Android({
             loop
             muted
             playsInline
+            preload="metadata"
+            onLoadedData={handleVideoLoad}
+            onError={handleVideoError}
+            style={{
+              opacity: isVideoLoaded ? 1 : 0,
+              transition: 'opacity 0.3s ease-in-out',
+            }}
           />
         </foreignObject>
       )}
+
+      {/* Animated Loader when video is loading or failed */}
+      {(!shouldLoadVideo || videoError || !isVideoLoaded) && (
+        <foreignObject
+          x="9"
+          y="14"
+          width="360"
+          height="800"
+          clipPath="url(#clip0_514_20855)"
+        >
+          <div
+            className="w-full h-full bg-gradient-to-br from-gray-900 to-black flex items-center justify-center"
+            style={{ opacity: 1 }}
+          >
+            <div className="text-center">
+              {/* Animated Loading Spinner */}
+              <div className="relative w-16 h-16 mx-auto mb-4">
+                <div className="absolute inset-0 border-4 border-gray-700 rounded-full"></div>
+                <div
+                  className="absolute inset-0 border-4 border-transparent border-t-blue-500 rounded-full animate-spin"
+                  style={{ animationDuration: '1s' }}
+                ></div>
+              </div>
+
+              {/* Loading Text */}
+              <div className="text-gray-400 text-sm font-medium">
+                Loading JLUG Experience
+              </div>
+
+              {/* Animated Dots */}
+              <div className="flex justify-center mt-2 space-x-1">
+                <div
+                  className="w-3 h-3 bg-blue-500 rounded-full animate-bounce"
+                  style={{ animationDelay: '0ms' }}
+                  aria-hidden="true"
+                ></div>
+                <div
+                  className="w-3 h-3 bg-blue-500 rounded-full animate-bounce"
+                  style={{ animationDelay: '150ms' }}
+                  aria-hidden="true"
+                ></div>
+                <div
+                  className="w-3 h-3 bg-blue-500 rounded-full animate-bounce"
+                  style={{ animationDelay: '300ms' }}
+                  aria-hidden="true"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </foreignObject>
+      )}
+
       <defs>
         <clipPath id="clip0_514_20855">
           <rect

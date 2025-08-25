@@ -18,7 +18,7 @@ export function NavbarComponent({ className }: { className?: string }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full z-[9999]">
       <Navbar className={className}>
         {/* Desktop Navigation */}
         <NavBody>
@@ -47,7 +47,31 @@ export function NavbarComponent({ className }: { className?: string }) {
               <a
                 key={`mobile-link-${idx}`}
                 href={item.link}
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={e => {
+                  // Special handling for Events when on team page
+                  if (
+                    item.name === 'Events' &&
+                    window.location.pathname === '/team'
+                  ) {
+                    e.preventDefault();
+                    // Navigate to home page first
+                    window.location.href = '/';
+                    // After navigation, scroll to events section
+                    setTimeout(() => {
+                      const element = document.querySelector('#events');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }, 100);
+                  } else if (item.link.startsWith('#')) {
+                    e.preventDefault();
+                    const element = document.querySelector(item.link);
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }
+                  setIsMobileMenuOpen(false);
+                }}
                 className="relative text-white w-full text-lg font-semibold z-50 px-4 py-3 rounded-md transition-all duration-200 hover:bg-zinc-600/80"
               >
                 <span className="block">{item.name}</span>

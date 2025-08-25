@@ -9,6 +9,7 @@ import {
 } from 'motion/react';
 
 import React, { useRef, useState } from 'react';
+import Image from 'next/image';
 
 interface NavbarProps {
   children: React.ReactNode;
@@ -134,8 +135,32 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
       {items.map((item, idx) => (
         <a
           onMouseEnter={() => setHovered(idx)}
-          onClick={onItemClick}
-          className="relative px-4 py-2 text-white"
+          onClick={e => {
+            // Special handling for Events when on team page
+            if (
+              item.name === 'Events' &&
+              window.location.pathname === '/team'
+            ) {
+              e.preventDefault();
+              // Navigate to home page first
+              window.location.href = '/';
+              // After navigation, scroll to events section
+              setTimeout(() => {
+                const element = document.querySelector('#events');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                }
+              }, 100);
+            } else if (item.link.startsWith('#')) {
+              e.preventDefault();
+              const element = document.querySelector(item.link);
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+              }
+            }
+            if (onItemClick) onItemClick();
+          }}
+          className="relative px-4 py-2 text-white cursor-pointer"
           key={`link-${idx}`}
           href={item.link}
         >
@@ -278,7 +303,7 @@ export const NavbarLogo = ({
       href="#"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-white"
     >
-      <img src={logo} alt="logo" width={30} height={30} />
+      <img src={logo} alt="logo" className="w-8 h-8" />
       <span className="font-medium text-white dark:text-white">{title}</span>
     </a>
   );
