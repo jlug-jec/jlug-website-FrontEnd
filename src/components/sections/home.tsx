@@ -8,7 +8,7 @@ import FacultySectionComponent from './faculty-section';
 import FounderSectionComponent from './founder-section';
 import Testimonials from './testimonials';
 import MeetTeamCTA from './meet-team-section';
-import GallerySection from './gallery-section';
+// import GallerySection from './gallery-section';
 import Footer from '../layout/Footer';
 import JECCASection from './jecca-section';
 
@@ -57,7 +57,7 @@ const Home = () => {
           <FounderSectionComponent />
           <Testimonials />
         </div>
-        <GallerySection />
+        {/* <GallerySection /> */}
         <JECCASection />
         <div id="contact">
           <Footer />

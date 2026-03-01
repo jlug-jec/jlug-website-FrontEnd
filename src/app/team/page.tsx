@@ -8,7 +8,11 @@ export const metadata: Metadata = {
     'Meet the amazing team behind JLUG - From seniors to juniors, discover the people who make our community thrive',
 };
 
-export default function Page() {
-  const teamData = parseTeamData();
+export async function generateStaticParams() {
+  return [];
+}
+
+export default async function Page() {
+  const teamData = await parseTeamData();
   return <TeamPage teamData={teamData} />;
 }

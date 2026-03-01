@@ -6,6 +6,10 @@ export const metadata = {
     'JEC Linux User Group - A community of Linux enthusiasts and tech professionals in Jabalpur Engineering College',
 };
 
-export default function Page() {
+export async function generateStaticParams() {
+  return [];
+}
+
+export default async function Page() {
   return <Home />;
 }

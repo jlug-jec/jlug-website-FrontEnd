@@ -18,7 +18,6 @@ export interface TeamMember {
 
 export interface TeamData {
   seniors: TeamMember[];
-  // juniors: TeamMember[];
 }
 
 function parseMarkdownFile(filePath: string): TeamMember[] {
@@ -97,13 +96,10 @@ function parseMarkdownFile(filePath: string): TeamMember[] {
 
 export function parseTeamData(): TeamData {
   const fourthYearPath = path.join(process.cwd(), 'src/data/4th-year-team.md');
-  // const thirdYearPath = path.join(process.cwd(), 'src/data/3rd-year-team.md');
 
   const fourthYearMembers = parseMarkdownFile(fourthYearPath);
-  // const thirdYearMembers = parseMarkdownFile(thirdYearPath);
 
   return {
     seniors: fourthYearMembers,
-    // juniors: thirdYearMembers
   };
 }

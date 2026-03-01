@@ -4,7 +4,6 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { parseTeamData, TeamData } from '@/lib/team-parser';
 import ProfileCard from '@/components/ui/react-bits/ProfileCard/ProfileCard';
-import ChromaGrid from '@/components/ui/react-bits/ChromaGrid';
 import { NavbarComponent } from '../ui/navbar';
 
 interface TeamPageProps {

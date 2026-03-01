@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   robots: 'index, follow',
 };
 
+export async function generateStaticParams() {
+  return [];
+}
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
