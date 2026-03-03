@@ -1,5 +1,7 @@
 import Home from '@/components/sections/home';
 
+export const runtime = 'edge';
+
 export const metadata = {
   title: 'JLUG - JEC Linux User Group',
   description:
