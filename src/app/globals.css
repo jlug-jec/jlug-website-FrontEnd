@@ -1,0 +1,206 @@
+@import "tailwindcss";
+
+@theme {
+  --color-jlug-black: #070707;
+  --color-jlug-ink: #0B0B0B;
+  --color-jlug-surface: #111111;
+  --color-jlug-surface-raised: #171717;
+
+  --color-jlug-white: #F2F0E8;
+  --color-jlug-white-soft: #D7D5CE;
+
+  --color-jlug-gray-1: #A3A29C;
+  --color-jlug-gray-2: #777770;
+  --color-jlug-gray-3: #494944;
+
+  --color-jlug-line: #292926;
+
+  --color-jlug-accent: #B7F34A;
+
+  --color-palette-darkest: #00002A;
+  --color-palette-navy: #1A3F75;
+  --color-palette-muted: #44E6A9;
+  --color-palette-accent: #44EA4C;
+
+  --color-background: var(--color-jlug-black);
+  --color-foreground: var(--color-jlug-white);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --void: #0a1324;
+  --navy: #16273b;
+  --steel: #1f3a52;
+  --slate: #4d718e;
+  --mist: #8eb0c9;
+  --frost: #cadbe9;
+
+  --font-display: var(--font-geist-sans), "Segoe UI", system-ui, sans-serif;
+  --font-body: var(--font-geist-sans), "Segoe UI", system-ui, sans-serif;
+
+  --radius-lg: 20px;
+  --radius-sm: 10px;
+  --gap: 1.5rem;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  background-color: var(--color-jlug-black);
+  color: var(--color-jlug-white);
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-jlug-black);
+  color: var(--color-jlug-white);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+}
+
+/* Dynamic SVG Zip-Line Cable Canvas */
+.rope-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 85;
+  transition: opacity 0.3s var(--ease);
+}
+
+.rope-canvas.is-ducked {
+  opacity: 0.15;
+}
+
+.rope-path {
+  stroke: var(--slate);
+  stroke-width: 2.5;
+  fill: none;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 6px rgba(202, 219, 233, 0.4));
+  stroke-dasharray: 6 3;
+}
+
+.rope-anchor-node {
+  fill: var(--navy);
+  stroke: var(--frost);
+  stroke-width: 2.5;
+  filter: drop-shadow(0 0 8px rgba(202, 219, 233, 0.5));
+}
+
+.rope-spark {
+  fill: var(--frost);
+  filter: drop-shadow(0 0 10px var(--frost));
+  opacity: 0;
+  transition: opacity 0.2s var(--ease);
+}
+
+/* Side-Gliding Penguin Mascot */
+.penguin-glider {
+  position: fixed;
+  top: 0;
+  left: calc(100vw - 84px);
+  z-index: 90;
+  pointer-events: auto;
+  will-change: transform, left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 96px;
+  height: 106px;
+  transition: opacity 0.3s var(--ease);
+}
+
+.penguin-glider.is-ducked {
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.penguin-wrapper {
+  width: 96px;
+  height: 105.6px;
+  cursor: pointer;
+  user-select: none;
+  filter: drop-shadow(0 12px 24px rgba(10, 19, 36, 0.7));
+  transition: transform 0.4s var(--ease-spring), opacity 0.4s var(--ease);
+  animation: penguinSway 8s ease-in-out infinite;
+}
+
+.penguin-wrapper:hover {
+  transform: scale(1.15) rotate(-4deg);
+}
+
+.penguin-wrapper.is-waddling {
+  animation: penguinWaddle 0.6s var(--ease-spring) !important;
+}
+
+.penguin-wrapper.is-ducked {
+  transform: translateY(-24px) scale(0.8);
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.penguin-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@keyframes penguinSway {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(4deg); }
+}
+
+@keyframes penguinWaddle {
+  0% { transform: scale(1) rotate(0deg); }
+  25% { transform: scale(1.18) rotate(-14deg) translateY(-8px); }
+  50% { transform: scale(1.18) rotate(14deg) translateY(-8px); }
+  75% { transform: scale(1.1) rotate(-6deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes scaleUp {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-scaleUp {
+  animation: scaleUp 0.3s var(--ease-spring) forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s var(--ease) forwards;
+}
+
+@keyframes floatIn {
+  0% {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float-in-1 {
+  animation: floatIn 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both;
+}
+
+.animate-float-in-2 {
+  animation: floatIn 0.95s cubic-bezier(0.16, 1, 0.3, 1) 0.18s both;
+}
+
+.animate-float-in-3 {
+  animation: floatIn 1.05s cubic-bezier(0.16, 1, 0.3, 1) 0.32s both;
+}
+

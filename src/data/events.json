@@ -1,0 +1,233 @@
+[
+  {
+    "id": "code-kumbh-2",
+    "tag": "HACKATHON",
+    "date": "TBA",
+    "name": "CODE KUMBH 2.0",
+    "description": "A 24-hour hackathon where teams collaborated, built, and presented solutions across a wide range of problem statements. The event saw strong participation, creativity, and technical skill from start to finish, closing out with late-night builds, last-minute submissions, and plenty of hard-earned breakthroughs.",
+    "participants": "",
+    "teams": "",
+    "status": "SUCCESS",
+    "images": [
+      "/assets/previous-events/codeKumbh2 (1).jpg",
+      "/assets/previous-events/codeKumbh2 (2).jpg",
+      "/assets/previous-events/codeKumbh2 (3).jpg",
+      "/assets/previous-events/codeKumbh2 (4).jpg"
+    ]
+  },
+  {
+    "id": "lenscape-2",
+    "tag": "PHOTOGRAPHY",
+    "date": "TBA",
+    "name": "LENSCAPE 2.0",
+    "description": "The second edition of JLUG's photography event, once again spotlighting student photographers and their perspective on campus life.",
+    "participants": "",
+    "teams": "",
+    "status": "ARCHIVE",
+    "images": [
+      "/assets/previous-events/lenscape2 (1).jpg",
+      "/assets/previous-events/lenscape2 (2).jpg",
+      "/assets/previous-events/lenscape2 (3).jpg",
+      "/assets/previous-events/lenscape2 (4).jpg",
+      "/assets/previous-events/lenscape2 (5).jpg",
+      "/assets/previous-events/lenscape2 (6).jpg"
+    ]
+  },
+  {
+    "id": "code-kumbh",
+    "tag": "HACKATHON",
+    "date": "TBA",
+    "name": "CODE KUMBH",
+    "description": "24-hour hackathon bringing together builders from across the state.",
+    "participants": "200+",
+    "teams": "45+",
+    "status": "SUCCESS",
+    "images": [
+      "/assets/previous-events/codeKumbh (1).webp",
+      "/assets/previous-events/codeKumbh (2).webp",
+      "/assets/previous-events/codeKumbh (3).webp",
+      "/assets/previous-events/codeKumbh (4).webp",
+      "/assets/previous-events/codeKumbh (5).webp",
+      "/assets/previous-events/codeKumbh (6).webp"
+    ],
+    "siteUrl": "https://codekumbh.jlug.club/"
+  },
+  {
+    "id": "inicio",
+    "tag": "CULTURAL",
+    "date": "TBA",
+    "name": "INICIO",
+    "description": "Echoes of the Beginning — an evening of stories, performances, and open-stage creativity marking JLUG's introduction to new voices on campus. The night featured a Kissagoi-powered storytelling act by Manas Bhardwaj alongside an open stage for the community.",
+    "participants": "",
+    "teams": "",
+    "status": "ARCHIVE",
+    "images": [
+      "/assets/previous-events/inicio (1).webp",
+      "/assets/previous-events/inicio (2).webp",
+      "/assets/previous-events/inicio (3).webp",
+      "/assets/previous-events/inicio (4).webp",
+      "/assets/previous-events/inicio (5).webp"
+    ]
+  },
+  {
+    "id": "lenscape",
+    "tag": "PHOTOGRAPHY",
+    "date": "TBA",
+    "name": "LENSCAPE",
+    "description": "JLUG's photography event, spotlighting student photographers and their perspective on campus life.",
+    "participants": "",
+    "teams": "",
+    "status": "ARCHIVE",
+    "images": [
+      "/assets/previous-events/lenscape (1).webp",
+      "/assets/previous-events/lenscape (2).webp",
+      "/assets/previous-events/lenscape (3).webp",
+      "/assets/previous-events/lenscape (4).webp",
+      "/assets/previous-events/lenscape (5).webp"
+    ],
+    "siteUrl": "https://lenscape.jlug.club/"
+  },
+  {
+    "id": "jecx-times",
+    "tag": "NEWSLETTER",
+    "date": "JULY 31, 2023",
+    "name": "THE JECX TIMES",
+    "description": "JEC's very own virtual newsletter. Launched on 31st July 2023. Aimed at updating all with upcoming events and nourishing the history of JEC.",
+    "participants": "",
+    "teams": "",
+    "status": "ACTIVE",
+    "images": [
+      "/assets/previous-events/JecX.jpg"
+    ]
+  },
+  {
+    "id": "harsh-lalwani-podcast",
+    "tag": "PODCAST",
+    "date": "AUGUST 8, 2021",
+    "name": "MR. HARSH LALWANI",
+    "description": "A podcast held on 8th August 2021 featuring Mr. Harsh Lalwani, of alumni batch 2012-2016, on 'How to pursue MS abroad'. The podcast aimed at guiding students for future studies and the various options available for higher studies.",
+    "participants": "",
+    "teams": "",
+    "status": "ARCHIVE",
+    "images": [
+      "/assets/previous-events/HarshLalwani.jpg"
+    ]
+  },
+  {
+    "id": "henry-harvin-workshop",
+    "tag": "WORKSHOP",
+    "date": "TBA",
+    "name": "HENRY HARVIN WORKSHOP",
+    "description": "A skill-building workshop conducted in partnership with Henry Harvin, giving students hands-on exposure to industry-relevant tools and certifications.",
+    "participants": "",
+    "teams": "",
+    "status": "ARCHIVE",
+    "images": [
+      "/assets/previous-events/HenryHarwin.jpg"
+    ]
+  },
+  {
+    "id": "alumni-meet",
+    "tag": "COMMUNITY",
+    "date": "TBA",
+    "name": "ALUMNI MEET",
+    "description": "An evening bringing JLUG alumni back to campus to reconnect with the community, share their journeys since graduating, and mentor current members.",
+    "participants": "",
+    "teams": "",
+    "status": "ARCHIVE",
+    "images": [
+      "/assets/previous-events/AlumniMeets.jpg"
+    ]
+  },
+  {
+    "id": "alma-matters",
+    "tag": "COMMUNITY",
+    "date": "TBA",
+    "name": "ALMA MATTERS",
+    "description": "A campus-wide gathering celebrating the ties between JEC's alumni and current students, spotlighting the legacy each batch leaves behind.",
+    "participants": "",
+    "teams": "",
+    "status": "ARCHIVE",
+    "images": [
+      "/assets/previous-events/AlmaMatters2.jpg"
+    ]
+  },
+  {
+    "id": "session-on-career",
+    "tag": "SEMINAR",
+    "date": "TBA",
+    "name": "SESSION ON CAREER",
+    "description": "A guest session with a Wing Commander sharing career guidance and insights on disciplined, purpose-driven paths beyond engineering.",
+    "participants": "",
+    "teams": "",
+    "status": "ARCHIVE",
+    "images": [
+      "/assets/previous-events/WingCommander.jpg"
+    ]
+  },
+  {
+    "id": "rohit-nema-session",
+    "tag": "SEMINAR",
+    "date": "TBA",
+    "name": "MR. ROHIT NEMA",
+    "description": "A talk by Mr. Rohit Nema sharing his professional journey and advice with JLUG members.",
+    "participants": "",
+    "teams": "",
+    "status": "ARCHIVE",
+    "images": [
+      "/assets/previous-events/RohitNema.jpg"
+    ]
+  },
+  {
+    "id": "panel-discussion",
+    "tag": "PANEL",
+    "date": "TBA",
+    "name": "PANEL DISCUSSION",
+    "description": "A panel discussion bringing together speakers from academia and industry to discuss technology, careers, and the road ahead for students.",
+    "participants": "",
+    "teams": "",
+    "status": "ARCHIVE",
+    "images": [
+      "/assets/previous-events/PanelDiscussion.jpg"
+    ]
+  },
+  {
+    "id": "sushil-sharma-session",
+    "tag": "SEMINAR",
+    "date": "TBA",
+    "name": "MR. SUSHIL SHARMA",
+    "description": "A talk by Mr. Sushil Sharma sharing insights and experience with the JLUG community.",
+    "participants": "",
+    "teams": "",
+    "status": "ARCHIVE",
+    "images": [
+      "/assets/previous-events/SushilKumar.jpg"
+    ]
+  },
+  {
+    "id": "aws-workshop",
+    "tag": "WORKSHOP",
+    "date": "TBA",
+    "name": "AWS WORKSHOP",
+    "description": "A hands-on workshop introducing students to Amazon Web Services, covering core cloud concepts and practical deployment exercises.",
+    "participants": "",
+    "teams": "",
+    "status": "ARCHIVE",
+    "images": [
+      "/assets/previous-events/AWS.jpg"
+    ]
+  },
+  {
+    "id": "mashaal",
+    "tag": "CULTURAL",
+    "date": "TBA",
+    "name": "MASHAAL",
+    "description": "A cultural gathering by JLUG blending creativity and community, in the true spirit of 'Where Culture Meets Code'.",
+    "participants": "",
+    "teams": "",
+    "status": "ARCHIVE",
+    "images": [
+      "/assets/previous-events/Mashaal.jpg"
+    ]
+  }
+]

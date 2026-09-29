@@ -1,0 +1,147 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+ * CircleWipeReveal — styles
+ *
+ * A spinning segmented green circle that sweeps from the photo to the text,
+ * revealing content as it passes. All colours use the JLUG palette.
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Container ─────────────────────────────────────────────────────────── */
+.cwipe {
+  position: absolute;
+  z-index: 25;
+  pointer-events: none;
+  will-change: transform, left, opacity;
+}
+
+/* ── SVG rings — fill the container ────────────────────────────────────── */
+.cwipe-ring,
+.cwipe-ring-inner,
+.cwipe-reticle {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Radial glow ───────────────────────────────────────────────────────── */
+.cwipe-glow {
+  position: absolute;
+  inset: 15%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(183, 243, 74, 0.10) 0%,
+    rgba(183, 243, 74, 0.04) 40%,
+    transparent 70%
+  );
+  filter: blur(8px);
+}
+
+/* ── Horizontal trail ──────────────────────────────────────────────────── */
+.cwipe-trail {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  height: 1px;
+  transform: translateY(-50%);
+  background: linear-gradient(
+    to left,
+    rgba(183, 243, 74, 0.45) 0%,
+    rgba(183, 243, 74, 0.12) 40%,
+    transparent 100%
+  );
+  pointer-events: none;
+  /* Second, softer glow layer */
+  box-shadow: 0 0 8px 1px rgba(183, 243, 74, 0.08);
+}
+
+/* ── Orbiting dot ──────────────────────────────────────────────────────── */
+.cwipe-orbit {
+  position: absolute;
+  inset: 0;
+  /* The dot is placed at the edge of the ring */
+}
+
+.cwipe-orbit-dot {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  margin-left: -2.5px;
+  margin-top: -2.5px;
+  border-radius: 50%;
+  background: #B7F34A;
+  box-shadow:
+    0 0 6px 2px rgba(183, 243, 74, 0.6),
+    0 0 16px 4px rgba(183, 243, 74, 0.2);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * Spin animations
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+.cwipe-spin {
+  animation: cwipe-rotate 3s linear infinite;
+}
+
+.cwipe-spin-reverse {
+  animation: cwipe-rotate 5s linear infinite reverse;
+}
+
+.cwipe-spin-fast {
+  animation: cwipe-rotate 2s linear infinite;
+}
+
+@keyframes cwipe-rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * Content mask — applied to the wrapper containing both TextPanel + PhotoPanel.
+ * The clip-path value is set inline; this class provides the transition easing
+ * and GPU acceleration so the sweep feels smooth.
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+.cwipe-content-mask {
+  will-change: clip-path;
+  /* Micro-transition so frame-by-frame clip updates feel silky */
+  transition: clip-path 0.06s linear;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * Reduced motion — respect the user's preference
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+  .cwipe-spin,
+  .cwipe-spin-reverse,
+  .cwipe-spin-fast {
+    animation: none;
+  }
+
+  .cwipe-trail {
+    display: none;
+  }
+
+  .cwipe-orbit-dot {
+    box-shadow: none;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * Responsive — scale down the circle on small screens
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+@media (max-width: 1024px) {
+  .cwipe {
+    /* On mobile the layout stacks vertically, so hide the sweep */
+    display: none;
+  }
+
+  .cwipe-content-mask {
+    /* Prevent horizontal clip slicing on mobile stacked layout */
+    clip-path: none !important;
+  }
+}

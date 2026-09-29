@@ -1,0 +1,13 @@
+/**
+ * Page-scoped legacy tokens for /hall-of-fame archival chronicle.
+ * Used strictly for timeline spine, archival borders, and era highlights.
+ * NEVER replaces --color-jlug-accent (lime remains the site-wide electric accent).
+ */
+
+.hall-of-fame-scope {
+  --color-legacy-void: #0B1425;
+  --color-legacy-deep: #1F3952;
+  --color-legacy-mid: #4A6E8C;
+  --color-legacy-steel: #8FB0C8;
+  --color-legacy-frost: #C9DBE9;
+}

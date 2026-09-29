@@ -1,0 +1,134 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+ * Hall of Fame — Scroll Marquee
+ *
+ * Typography-wall treatment for inductee names & years.
+ * All colours reference the existing JLUG design tokens from globals.css.
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Section ────────────────────────────────────────────────────────────── */
+.hof-marquee-section {
+  background: var(--color-jlug-black);
+  /* Subtle vertical gradient to visually separate from adjacent sections */
+  background-image: linear-gradient(
+    180deg,
+    rgba(183, 243, 74, 0.015) 0%,
+    transparent 30%,
+    transparent 70%,
+    rgba(183, 243, 74, 0.015) 100%
+  );
+}
+
+/* ── Row containers ─────────────────────────────────────────────────────── */
+.marquee-row {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Name typography — the large, dominant text ─────────────────────────── */
+.marquee-name {
+  font-size: clamp(3rem, 8vw, 7rem);
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-jlug-gray-3);
+  transition: color 0.4s ease, -webkit-text-stroke-color 0.4s ease;
+}
+
+/* Every other name gets a filled accent treatment for visual rhythm */
+.marquee-copy .marquee-name:nth-child(odd) {
+  /* Stays outlined by default — the even items get filled below */
+}
+
+/* On hover of the row, all names become slightly more visible */
+.marquee-row-names:hover .marquee-name,
+.marquee-row-names-sm:hover .marquee-name {
+  -webkit-text-stroke-color: var(--color-jlug-gray-2);
+}
+
+/* ── Accent-filled names (sparse, for visual contrast) ──────────────────── */
+/* Target every 3rd item in the strip to sprinkle filled names */
+.marquee-copy > span:nth-child(3n + 1) .marquee-name {
+  color: var(--color-jlug-accent);
+  -webkit-text-stroke: none;
+  opacity: 0.07;
+}
+
+/* ── Dot separator between names ────────────────────────────────────────── */
+.marquee-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-jlug-accent);
+  opacity: 0.25;
+  flex-shrink: 0;
+}
+
+/* ── Year typography — mono, medium size ─────────────────────────────────── */
+.marquee-year {
+  font-size: clamp(1.6rem, 4vw, 3.5rem);
+  line-height: 1;
+  color: var(--color-jlug-gray-3);
+  letter-spacing: 0.08em;
+  transition: color 0.4s ease;
+}
+
+.marquee-row-years:hover .marquee-year {
+  color: var(--color-jlug-gray-2);
+}
+
+/* Every other year gets the accent color at low opacity */
+.marquee-copy > span:nth-child(even) .marquee-year {
+  color: var(--color-jlug-accent);
+  opacity: 0.12;
+}
+
+/* ── Slash separator ────────────────────────────────────────────────────── */
+.marquee-slash {
+  font-family: var(--font-mono);
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+  color: var(--color-jlug-line);
+  opacity: 0.5;
+}
+
+/* ── Smaller name row variant ───────────────────────────────────────────── */
+.marquee-row-names-sm .marquee-name {
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  -webkit-text-stroke-width: 0.5px;
+}
+
+.marquee-row-names-sm .marquee-dot {
+  width: 4px;
+  height: 4px;
+}
+
+/* ── Reduced motion ─────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-row {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hof-marquee-section {
+    padding-bottom: 1.5rem;
+  }
+
+  .marquee-name {
+    font-size: clamp(2.2rem, 9vw, 4rem);
+    -webkit-text-stroke-width: 0.5px;
+  }
+
+  .marquee-year {
+    font-size: clamp(1.2rem, 5vw, 2.2rem);
+  }
+
+  .marquee-slash {
+    font-size: clamp(1rem, 4vw, 1.8rem);
+  }
+
+  .marquee-row-names-sm .marquee-name {
+    font-size: clamp(1.6rem, 6.5vw, 2.8rem);
+    -webkit-text-stroke-width: 0.3px;
+  }
+}
